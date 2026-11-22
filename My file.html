@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My File</title>
+</head>
+<style>
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+section {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #444;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+b {
+    color: #222;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+h3{
+    padding: 15px;
+    background-color: #007BFF;
+    height: 40px;
+}
+</style>
+<body>
+    <div>
+        <h1>
+            Website Designer
+        </h1>
+        <img src="WhatsApp Image 2025-12-06 at 03.12.57_1b253f11.jpg" width="150px" height="150px">
+    </div>
+    <section>
+<h2>Personal data</h2>
+<b>Name :</b> Alshimaa Haythm Ibrahim ElBatanouny<br><br>
+<b>Telephone number :</b> (01113758087) <br><br>
+<b>Whats App : </b>01113758087<br><br>
+<b>Facebook page :</b> <a href=" https://www.facebook.com/share/1CxxfxP82B/" title="Go To Facebook page" > <b>Alshimaa H ElBatanouny</b> </a><br><br>
+<b>Instagram page :</b> <a href=" https://www.instagram.com/eng.alshimaa_haythm?igsh=eXl4Mnh0Z2ZjMnJp" title="Go To Instagram page" > <b>eng.alshimaa_haythm</b> </a><br><br>
+<b>Academic stage : </b> Student in the College of Engineering .<br><br>
+<b>Address : </b> Egypt / Beheira /  Hosh Eissa / Al-Batanouny . <br><br><hr>
+<h2> My Courses  : </h2> 
+<table border="4">
+    <tr>
+        <td><figure>
+            <img src="WhatsApp Image 2025-12-06 at 03.49.22_a591d1bc.jpg" width="250px" height="180px"><br>
+            <b> HTML</b>
+        </figure></td>
+        <td><figure>
+            <img src="WhatsApp Image 2025-12-06 at 03.49.27_fff30b51.jpg" width="250px" height="180px"><br>
+            <b> CSS</b>
+        </figure></td>
+        <td><figure>
+            <img src="WhatsApp Image 2025-12-06 at 04.07.29_d921c8cb.jpg" width="250px" height="180px"><br>
+            <b> Aigorithm and Problem Solving Level (1)</b>
+        </figure></td>
+    </tr>
+</table>
+<hr>
+<h3><i>" Success is not the end of the road, but rather a new step towards greater challenges and greater achievements. "</i></h3>
+    </section>
+</body>
+<script>
+  
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>

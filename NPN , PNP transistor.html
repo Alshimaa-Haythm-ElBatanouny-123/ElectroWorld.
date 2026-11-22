@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NPN,PNP Transistor</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <h1>NPN Transistor</h1>
+    </div>
+    <section>
+            <img src="data:image/jpeg;base64,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 " width="300px" height="300px"><br><br>
+        An NPN transistor is a type of bipolar junction transistor (BJT) widely used in electronic circuits for switching and amplification.<br>
+        It consists of three layers of semiconductor material arranged in the order N-type, P-type, and N-type, creating two junctions.<br><br><hr>
+        <h3>Structure of an NPN Transistor</h3>
+        <b><i>1. Three Terminals:</i></b><br>
+        <b>Emitter (E):</b><br>
+        Heavily doped N-type material; emits electrons.<br>
+        <b>Base (B): </b><br>
+        Thin and lightly doped P-type material; controls the flow of current.<br>
+        <b>Collector (C):</b><br>
+         Moderately doped N-type material; collects electrons.<br><br>
+        <b><i>2. Junctions:</i></b><br>
+        <b>Base-Emitter Junction:</b><br>
+        Forward-biased during normal operation.<br>
+        Base-Collector Junction: Reverse-biased during normal operation.<br>
+        <br><hr>
+        <h3>A collection of important videos for explanation</h3>
+          <a href="https://www.youtube.com/watch?v=yxja4poeBPQ&pp=ygUXTlBOIFRyYW5zaXN0b3IgIHdhbGVlZCA%3D" > <h4>First video</h4> </a>
+          <a href=" https://www.youtube.com/watch?v=AcxDiesy-nI&pp=ygUOTlBOIFRyYW5zaXN0b3I%3D" > <h4>Second video</h4> </a>
+        <a href="https://www.youtube.com/watch?v=OL9dFocD7bY&pp=ygUOTlBOIFRyYW5zaXN0b3I%3D" > <h4>Third video </h4></a>
+       <a href="https://www.youtube.com/watch?v=JQalmYt7-go&pp=ygUOTlBOIFRyYW5zaXN0b3I%3D"><h4>Fourth Video</h4></a>
+       <br><br><hr>
+        <h3>Working Principle</h3>
+        The NPN transistor works by controlling a large current between the collector and emitter using a small current at the base.<br><br>
+        1. When a small positive voltage is applied to the base (relative to the emitter).<br>
+        The base-emitter junction becomes forward-biased, allowing electrons to flow from the emitter to the collector.<br><br>
+        2. A majority of the electrons flow from the emitter to the collector, with a small portion flowing through the base terminal.<br><br>
+        3. The current gain () of the transistor is the ratio of the collector current () to the base current ():<br><br><hr>
+        <h3>Modes of Operation</h3>
+        <b>1. Cutoff Region:</b><br>
+        Base-emitter junction is not forward-biased.<br>
+        No current flows between collector and emitter (transistor is OFF).<br><br>
+        <b>2. Active Region:</b><br>
+        Base-emitter junction is forward-biased, and base-collector junction is reverse-biased.<br>
+        Transistor operates as an amplifier.<br><br>
+        <b>3. Saturation Region:</b><br>
+        Both junctions are forward-biased.<br>
+        Maximum current flows between collector and emitter (transistor is fully ON).<br><br><hr>
+        <h3>Characteristics of NPN Transistor</h3>
+        <b>1. Current Flow:</b><br>
+        Emitter to Collector: Majority carrier flow (electrons).<br>
+        Base Current: Controls the larger collector current.<br><br>
+        <b>2. Voltage Relationships:</b><br>
+        <b><i>Base-emitter voltage ():</i></b><br>
+        Typically 0.7V for silicon transistors.<br>
+        <b><i>Collector-emitter voltage ():</i></b><br>
+         Must be greater than  in the active region.<br><br><hr>
+        <h3>Applications</h3>
+        <b>1. Switching:</b><br>
+        Used in digital circuits for turning devices ON or OFF.<br>
+        Example:<br>
+        Driving LEDs or relays.<br><br>
+        <b>2. Amplification:</b><br>
+        Used in audio amplifiers and signal processing.<br>
+        Small input signals at the base are amplified at the collector.<br><br>
+        <b>3. Oscillators:</b><br>
+        Forms part of oscillatory circuits in radios and communication devices.<br><br>
+        <b>4. Voltage Regulation:</b><br>
+        Acts as a voltage regulator in power supplies.<br><br><hr>
+        <h3>Example Circuit:</h3>
+        NPN Transistor as a Switch<br>
+        When the base voltage is HIGH, the transistor turns ON, allowing current to flow through the collector-emitter path and powering the load.<br>
+        When the base voltage is LOW, the transistor turns OFF, cutting off current flow.<br>
+        <img src="https://www.electronics-tutorials.ws/wp-content/uploads/2013/09/tran5.gif?fit=499%2C248?fit=355,226" width="500px" height="300px" ><br><br>
+        The NPN transistor is a fundamental building block in electronics due to its reliability, versatility, and efficiency.
+        <br><hr>
+<h3>NPN Transistor Quiz</h3>
+<form>
+
+  <p>1. What is the main function of an NPN transistor?</p>
+  <input type="radio" name="q1">To amplify current<br>
+  <input type="radio" name="q1">To act as a switch<br>
+  <input type="radio" name="q1">To store charge<br>
+  <input type="radio" name="q1">To regulate voltage<br>
+
+  <p>2. In an NPN transistor, which region is the most important for amplification?</p>
+  <input type="radio" name="q2">Emitter region<br>
+  <input type="radio" name="q2">Base region<br>
+  <input type="radio" name="q2">Collector region<br>
+  <input type="radio" name="q2">Active region<br>
+
+  <p>3. In an NPN transistor, when the base-emitter junction is forward biased, what happens?</p>
+  <input type="radio" name="q3">The transistor is turned off<br>
+  <input type="radio" name="q3">The transistor conducts current<br>
+  <input type="radio" name="q3">The transistor behaves like a diode<br>
+  <input type="radio" name="q3">The transistor enters breakdown mode<br>
+
+  <p>4. What is the function of the collector in an NPN transistor?</p>
+  <input type="radio" name="q4">To control the base current<br>
+  <input type="radio" name="q4">To store charge<br>
+  <input type="radio" name="q4">To collect the majority charge carriers<br>
+  <input type="radio" name="q4">To supply the input signal<br>
+
+  <p>5. What type of current flows through the base of an NPN transistor?</p>
+  <input type="radio" name="q5">Electron current<br>
+  <input type="radio" name="q5">Hole current<br>
+  <input type="radio" name="q5">Both electron and hole current<br>
+  <input type="radio" name="q5">No current flows<br>
+
+  <p>6. What is the voltage drop across the base-emitter junction of an NPN transistor in active mode?</p>
+  <input type="radio" name="q6">0.1-0.3V<br>
+  <input type="radio" name="q6">0.7V<br>
+  <input type="radio" name="q6">1.2V<br>
+  <input type="radio" name="q6">5V<br>
+
+  <p>7. What is the typical current gain (β) for an NPN transistor?</p>
+  <input type="radio" name="q7">Less than 1<br>
+  <input type="radio" name="q7">1-10<br>
+  <input type="radio" name="q7">20-1000<br>
+  <input type="radio" name="q7">1000-5000<br>
+
+  <p>8. What is the main characteristic of the saturation region in an NPN transistor?</p>
+  <input type="radio" name="q8">The transistor is off<br>
+  <input type="radio" name="q8">The transistor is fully on, with minimal voltage drop<br>
+  <input type="radio" name="q8">The transistor amplifies the input signal<br>
+  <input type="radio" name="q8">The transistor is in breakdown mode<br>
+
+  <p>9. How does the NPN transistor behave in the cutoff region?</p>
+  <input type="radio" name="q9">It amplifies current<br>
+  <input type="radio" name="q9">It does not conduct any current<br>
+  <input type="radio" name="q9">It acts as a switch and allows current flow<br>
+  <input type="radio" name="q9">It behaves like a resistor<br>
+
+  <p>10. What happens when the base current of an NPN transistor is increased?</p>
+  <input type="radio" name="q10">The transistor enters saturation<br>
+  <input type="radio" name="q10">The collector current increases proportionally<br>
+  <input type="radio" name="q10">The emitter current decreases<br>
+  <input type="radio" name="q10">The transistor turns off<br>
+
+</form>
+
+<h3><summary>Answer</summary></h3>
+<details>
+  <ul>
+    1. To amplify current<br>
+    2. Active region<br>
+    3. The transistor conducts current<br>
+    4. To collect the majority charge carriers<br>
+    5. Electron current<br>
+    6. 0.7V<br>
+    7. 20-1000<br>
+    8. The transistor is fully on, with minimal voltage drop<br>
+    9. It does not conduct any current<br>
+    10. The collector current increases proportionally<br>
+  </ul>
+</details>
+        <h3 >A collection of other sources</h3>
+        <a href="https://www.electronics-tutorials.ws/transistor/tran_2.html" > <h4>Electronics</h4> </a>
+       <a href=" https://byjus.com/physics/npn-transistor/" > <h4>Byjus</h4> </a>
+      <a href="https://www.rs-online.com/designspark/what-is-npn-transistor-definition-types-applications" > <h4>Rs-online</h4></a>
+    </section>
+    <div>
+        <h1>PNP transistor</h1>
+    </div>
+    <section>
+<img src="https://5.imimg.com/data5/ECOM/Default/2024/8/441396313/KK/ZA/MG/2755789/1015pnptransistor-500x500.jpg" width="300px" height="300px"><br><br>
+A PNP transistor is a type of bipolar junction transistor (BJT) that consists of two P-type layers separated by an N-type layer,<br>
+ arranged in the order P-type, N-type, and P-type.<br>
+It is used in electronic circuits for switching and amplification, similar to the NPN transistor,<br>
+ but with reversed polarities and current directions.<br><br><hr>
+<h3>Structure of a PNP Transistor</h3>
+<b>1. Three Terminals:</b><br>
+<i><b>Emitter (E):</b></i><br>
+Heavily doped P-type material; emits holes (majority carriers).<br>
+<i><b>Base (B):</b></i><br>
+Thin and lightly doped N-type material; controls the flow of current.<br>
+<i><b>Collector (C):</b></i><br>
+Moderately doped P-type material; collects holes.<br><br>
+<b>2. Junctions:</b><br>
+<i><b>Base-Emitter Junction:</b></i><br>
+Forward-biased during normal operation.<br>
+<i><b>Base-Collector Junction:</b></i><br>
+Reverse-biased during normal operation.<br>
+<br><hr>
+<h3>A collection of important videos for explanation</h3>
+  <a href="https://www.youtube.com/watch?v=fOvZKtZogb0&pp=ygUOUE5QIHRyYW5zaXN0b3I%3D" > <h4>First video</h4> </a>
+  <a href=" https://www.youtube.com/watch?v=NKeQzRoNP80&pp=ygUOUE5QIHRyYW5zaXN0b3I%3D" > <h4>Second video</h4> </a>
+<a href="https://www.youtube.com/watch?v=A6CVJsTYtLc&pp=ygUgUE5QIHRyYW5zaXN0b3Ig2YjZhNmK2K8g2LnZitiz2Yo%3D" > <h4>Third video </h4></a>
+<a href="https://www.youtube.com/watch?v=13S5P6iCZyM&pp=ygUOUE5QIHRyYW5zaXN0b3I%3D"><h4>Fourth Video</h4></a>
+<br><br><hr>
+<h3>Working Principle</h3>
+The PNP transistor operates by allowing a small current to flow out of the base,<br>
+ controlling a larger current between the emitter and collector.<br><br>
+1. When the base is more negative than the emitter, the base-emitter junction becomes forward-biased,<br>
+ allowing holes to flow from the emitter into the base.<br><br>
+2. A majority of these holes pass through the base to the collector,<br>
+ while a small portion recombines with electrons in the base.<br><br>
+3. The collector current () is nearly equal to the emitter current () because the base current () is very small<br><br><hr>
+<h3>Modes of Operation</h3>
+<b>1. Cutoff Region:</b><br>
+The base-emitter junction is not forward-biased.<br>
+No current flows between the emitter and collector (transistor is OFF).<br><br>
+<b>2. Active Region:</b><br>
+The base-emitter junction is forward-biased, and the base-collector junction is reverse-biased.<br>
+The transistor amplifies the current.<br><br>
+<b>3. Saturation Region:</b><br>
+Both junctions are forward-biased.<br>
+Maximum current flows between the emitter and collector (transistor is fully ON).<br><br><hr>
+<h3>Key Characteristics</h3>
+<b>1. Current Flow:</b><br>
+The majority carrier flow is holes, which move from the emitter to the collector.<br>
+A small base current controls the larger emitter-collector current.<br><br>
+<b>2. Voltage Relationships:</b><br>
+<i><b>The base-emitter voltage () </b></i><br>
+is negative for a PNP transistor (typically -0.7V for silicon transistors).<br>
+<i><b>The collector-emitter voltage ()</b></i><br>
+ must be positive for the transistor to operate in the active region.<br><br><hr>
+<h3>Differences Between PNP and NPN Transistors</h3>
+<b>PNP Transistor:</b><br>
+Current flows from emitter to collector.<br>
+Turns ON when the base is negative relative to the emitter.<br><br>
+<b>NPN Transistor:</b><br>
+Current flows from collector to emitter.<br>
+Turns ON when the base is positive relative to the emitter.<br><br><hr>
+<h3>Applications</h3>
+<b>1. Switching Circuits:</b><br>
+Used in low-side switching, where the load is connected to the ground.<br><br>
+<b>2. Amplification:</b><br>
+Amplifies weak input signals into stronger output signals.<br><br>
+<b>3. Current Control:</b><br>
+Controls current flow in circuits, such as motor controllers.<br><br>
+<b>4. Complementary Pair Configurations:</b><br>
+Often used with NPN transistors to form push-pull amplifiers.<br><br><hr>
+<h3>Example Circuit:</h3>
+<b>PNP Transistor as a Switch</b>
+The PNP transistor is ON when the base voltage is LOW (relative to the emitter).<br>
+The transistor is OFF when the base voltage is HIGH (same as the emitter voltage).<br>
+<img src="https://www.electronics-tutorials.ws/wp-content/uploads/2013/09/tran6.gif?fit=499%2C248?fit=355,226" width="450px" height="300px"><br><br><hr>
+<b>The PNP transistor</b><br>
+ is a versatile electronic component, particularly useful in circuits where current flows from the positive terminal<br>
+Making it an essential building block in analog and digital electronics.
+<br><hr>
+<h3>PNP Transistor Quiz</h3>
+
+<form>
+
+  <p>1. What is the main function of a PNP transistor?</p>
+  <input type="radio" name="q1">To amplify current<br>
+  <input type="radio" name="q1">To store charge<br>
+  <input type="radio" name="q1">To act as a switch<br>
+  <input type="radio" name="q1">To regulate voltage<br>
+
+  <p>2. In a PNP transistor, which region is responsible for controlling the flow of current?</p>
+  <input type="radio" name="q2">Base region<br>
+  <input type="radio" name="q2">Collector region<br>
+  <input type="radio" name="q2">Emitter region<br>
+  <input type="radio" name="q2">Active region<br>
+
+  <p>3. When the base-emitter junction of a PNP transistor is forward biased, what happens?</p>
+  <input type="radio" name="q3">The transistor is turned off<br>
+  <input type="radio" name="q3">The transistor conducts current<br>
+  <input type="radio" name="q3">The transistor behaves like a diode<br>
+  <input type="radio" name="q3">The transistor enters breakdown mode<br>
+
+  <p>4. What type of current flows through the emitter of a PNP transistor?</p>
+  <input type="radio" name="q4">Electron current<br>
+  <input type="radio" name="q4">Hole current<br>
+  <input type="radio" name="q4">Both electron and hole current<br>
+  <input type="radio" name="q4">No current flows<br>
+
+  <p>5. What is the voltage drop across the base-emitter junction of a PNP transistor in active mode?</p>
+  <input type="radio" name="q5">0.1-0.3V<br>
+  <input type="radio" name="q5">0.7V<br>
+  <input type="radio" name="q5">1.2V<br>
+  <input type="radio" name="q5">5V<br>
+
+  <p>6. In which region does a PNP transistor operate when the base current is small and the collector current is large?</p>
+  <input type="radio" name="q6">Saturation region<br>
+  <input type="radio" name="q6">Cutoff region<br>
+  <input type="radio" name="q6">Active region<br>
+  <input type="radio" name="q6">Breakdown region<br>
+
+  <p>7. What happens when the base current of a PNP transistor is increased?</p>
+  <input type="radio" name="q7">The transistor enters saturation<br>
+  <input type="radio" name="q7">The collector current increases proportionally<br>
+  <input type="radio" name="q7">The emitter current decreases<br>
+  <input type="radio" name="q7">The transistor turns off<br>
+
+  <p>8. What is the behavior of a PNP transistor in the cutoff region?</p>
+  <input type="radio" name="q8">The transistor is fully on, with minimal voltage drop<br>
+  <input type="radio" name="q8">The transistor amplifies the signal<br>
+  <input type="radio" name="q8">The transistor does not conduct current<br>
+  <input type="radio" name="q8">The transistor is in breakdown mode<br>
+
+  <p>9. Which of the following is true about the current flow in a PNP transistor?</p>
+  <input type="radio" name="q9">Current flows from emitter to collector<br>
+  <input type="radio" name="q9">Current flows from collector to emitter<br>
+  <input type="radio" name="q9">Current flows from base to emitter<br>
+  <input type="radio" name="q9">Current does not flow in a PNP transistor<br>
+
+  <p>10. What is the typical current gain (β) for a PNP transistor?</p>
+  <input type="radio" name="q10">Less than 1<br>
+  <input type="radio" name="q10">1-10<br>
+  <input type="radio" name="q10">20-1000<br>
+  <input type="radio" name="q10">1000-5000<br>
+
+</form>
+
+<h3><summary>Answer</summary></h3>
+<details>
+  <ul>
+    1. To amplify current<br>
+    2. Base region<br>
+    3. The transistor conducts current<br>
+    4. Hole current<br>
+    5. 0.7V<br>
+    6. Active region<br>
+    7. The collector current increases proportionally<br>
+    8. The transistor does not conduct current<br>
+    9. Current flows from emitter to collector<br>
+    10. 20-1000<br>
+  </ul>
+</details>
+<h3 >A collection of other sources</h3>
+<a href="https://www.electronics-tutorials.ws/transistor/tran_3.html" > <h4>Electronics</h4> </a>
+<a href=" https://byjus.com/physics/pnp-transistor/" > <h4>Byjus</h4> </a>
+<a href="https://www.rs-online.com/designspark/what-is-pnp-transistor-and-its-types" > <h4>Rs-online</h4></a>
+    </section>
+</body>
+<script>  
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>

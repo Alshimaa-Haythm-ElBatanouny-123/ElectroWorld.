@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Light Emitting Diods</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg-dark: #0b1120;
+        --bg-gradient: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+        --card-bg: rgba(30, 41, 59, 0.65);
+        --card-border: rgba(148, 163, 184, 0.15);
+        --accent-green: #a2d134;
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* الخلفية العامة */
+    body {
+        background: var(--bg-dark);
+        background-image: var(--bg-gradient);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-main);
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+        line-height: 1.7;
+    }
+
+    /* تنسيق الصور العامة */
+    img {
+        border-radius: 14px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    /* تنسيق الشريط العلوي والعنوان */
+    #name {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 20px 5%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h1 {
+        color: var(--accent-green);
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+        text-shadow: 0 0 15px rgba(162, 209, 52, 0.3);
+    }
+
+    /* صندوق المعلومات والشرح */
+    #information {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid var(--card-border);
+        padding: 30px;
+        border-radius: 16px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 25px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    #information mark {
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent-cyan);
+        padding: 2px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* تنسيق الجداول والبطاقات بداخلها */
+    table {
+        width: 90%;
+        max-width: 1280px;
+        margin: 35px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        border: none;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+    }
+
+    td figure {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 18px;
+        margin: 0;
+        border-radius: 16px;
+        transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    td figure:hover {
+        transform: translateY(-8px);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    /* صور العناصر داخل الجداول */
+    td img {
+        border-radius: 12px;
+        background: #ffffff;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        box-shadow: none;
+    }
+
+    td figure:hover img {
+        transform: scale(1.06);
+    }
+
+    /* تصميم الروابط */
+    a {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: var(--accent-gold);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--accent-cyan);
+    }
+
+    /* التجاوب مع شاشات الموبايل */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        #information {
+            width: 92%;
+            padding: 20px;
+        }
+        table, tbody, tr, td {
+            display: block;
+            width: 100%;
+        }
+        td {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+<body>
+    <h1><ins><i>Light Emitting Diods</i></ins></h1><br><br>
+    <section>
+        <img src="https://static.vecteezy.com/system/resources/previews/000/156/514/non_2x/vector-different-led-type.jpg " width="850px" height="430px">
+        <table border="4">
+            <tbody>
+                <tr>
+                    <td><figure>
+                        <a href=" A bi-color LED.html" title=" Go To Bi-color LED"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmuXQ-Oc8N79ROENOdv69go9kn529Ce89Fg&s" width=" 200px" height="200px" ><br> <b>Bi-color LED</b></a>
+                    </figure></td>
+                    <!-- <td><figure>
+                        <a href=" A flashing LED.html" title=" Go To Flashing LED"><img src=" https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.625,f_auto,h_214,q_auto,w_380/c_pad,h_214,w_380/R2532655-02?pgw=1" width=" 150px" height="150px" ><br><b>Flashing LED</b></a>
+                    </figure></td> -->
+                    <td><figure>
+                        <a href=" A tri-color LED.html" title=" Go To Tri-color LED"> <img src=" https://www.smartbrightleds.com/images/RGB-LEDS-RL5-RGB15-C.jpg" width=" 200px" height="200px" ><br><b>Tri-color LED </b></a>
+                    </figure></td>
+                    <td><figure>
+                        <a href="An LED.html" title=" Go To LED"> <img src="data:image/jpeg;base64,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 " width=" 200px" height="200px" ><br><b>LED </b></a>
+                    </figure></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // تلوين الخلفية عند المرور على الصور
+    const figures = document.querySelectorAll("td figure");
+    figures.forEach(figure => {
+        figure.addEventListener("mouseenter", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        });
+        figure.addEventListener("mouseleave", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+        });
+    });
+});
+</script>
+</html>

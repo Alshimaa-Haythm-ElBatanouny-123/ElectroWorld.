@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>An SPDT relay</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div>
+    <h1><i><ins>Some Arduino projects</ins></i></h1> 
+  </div>
+<section>
+    <h3> First Project (Smart Home Automation System)</h3>
+<b>Description</b><br>
+This project allows you to control your home appliances like lights, fans, and AC using a smartphone or sensors.<br><br>
+<b>Components Needed:</b><br>
+<b>* </b>Arduino UNO<br>
+<b>* </b>Relay Module<br>
+<b>* </b>Bluetooth Module (HC-05) or Wi-Fi Module (ESP8266)<br>
+<b>* </b>Smartphone with an app (like Blynk)<br>
+<b>* </b>Power supply<br><br>
+<b>How it works</b><br>
+The Arduino is connected to relays which control the appliances.<br>
+ When you send a command from your smartphone (via Bluetooth or Wi-Fi), the Arduino receives it and turns the device ON or OFF accordingly.<br><br><hr>
+ <b>other source :</b><br>
+ <a href="https://en.wikipedia.org/wiki/Home_automation">Wikipedia</a>
+ <a href="https://www.techtarget.com/iotagenda/definition/smart-home-or-building">Techtarget</a>
+ <a href="https://www.teknetic.com/?srsltid=AfmBOoq-1XsFkCWp4BYY52kzmEshnb2szoJkZh95ihddd8CUYx-7zlrQ">Teknetic</a>
+ </section>
+<section>
+    <h3> Second Project (Weather Monitoring Station )</h3>
+    <b>Description</b><br>
+A small station that measures temperature, humidity, and atmospheric pressure and displays it on an LCD or sends it to your phone.<br><br>
+<b>Components Needed:</b><br>
+<b>* </b>Arduino UNO<br>
+<b>* </b>DHT11 or DHT22 Sensor (for temperature and humidity)<br>
+<b>* </b>BMP180 or BMP280 (for pressure)<br>
+<b>* </b>LCD Display or OLED<br>
+<b>* </b>Optional: Wi-Fi Module (to send data online)<br><br>
+<b>How it works:</b><br>
+Sensors collect environmental data and send it to the Arduino.<br>
+ The Arduino processes the data and displays it on the screen or sends it to a cloud service.<br><br><hr>
+ <b>other source :</b><br>
+ <a href="https://www.boltek.com/catalog/products?gad_source=1&gbraid=0AAAAADiFpBktd8RQPvZix2gL7TTEuWPlS&gclid=EAIaIQobChMI2Jri_p_zjAMVaaqDBx2caRAyEAAYASAAEgI1O_D_BwE">Boltek</a>
+ <a href="https://en.wikipedia.org/wiki/Weather_station">Wikipedia</a>
+</section>
+<section>
+    <h3> Third Project (Smart Irrigation System)</h3>
+    <b> Description:</b><br>
+     A system that waters plants automatically when the soil is dry.<br><br>
+    <b> Components Needed:</b><br>
+    <b>* </b>Arduino UNO<br>
+    <b>* </b>Soil Moisture Sensor <br>
+    <b>* </b>Relay Module<br>
+    <b>* </b>Water Pump or Solenoid Valve<br>
+    <b>* </b>Water Source<br>
+    <b>* </b>Power Supply<br><br>
+    <b> How it works:</b><br>
+     The soil moisture sensor detects the dryness of the soil.<br>
+      If the moisture is low, Arduino activates the relay, which turns on the water pump to irrigate the soil.<br><br><hr>
+      <b>other source :</b><br>
+      <a href="https://extension.okstate.edu/fact-sheets/smart-irrigation-technology-controllers-and-sensors.html">Extension</a>
+      <a href="https://www.hydropoint.com/what-is-smart-irrigation/">Hydropoint</a>
+      <a href="https://lumo.ag/what-are-smart-irrigation-systems-and-how-do-they-work/">Lumo</a>
+</section>
+  <section>
+    <h3>Fourth Projects (Obstacle Avoiding Robot)</h3>
+<b>  Description:</b><br>
+  A robot that can move around and avoid obstacles using sensors.<br><br>
+  <b>Components Needed:</b><br>
+  <b>* </b>Arduino UNO<br>
+  <b>* </b>Ultrasonic Sensor (HC-SR04)<br>
+  <b>* </b>L298N Motor Driver<br>
+  <b>* </b>Two DC Motors and Wheels<br>
+  <b>* </b>Chassis and Battery Pack<br><br>
+<b>  How it works:</b><br>
+  The ultrasonic sensor constantly checks the distance in front. <br>
+  If it detects an obstacle, the Arduino decides to turn the robot left or right to avoid the obstacle.<br><br><hr>
+  <b>other source :</b><br>
+  <a href="https://www.instructables.com/Arduino-Ultimate-Obstacle-Avoiding-Robot/">Instructables</a>
+  <a href="https://www.instructables.com/How-to-Make-Smart-Obstacle-Avoiding-Robot-Using-Ar/">Instructables</a>
+  <a href="https://en.wikipedia.org/wiki/Obstacle_avoidance">Wikipedia</a>
+  </section>
+ <section>
+    <h3>Fiveth Project (RFID Door Lock System)</h3>
+    <b>Description:</b><br>
+    A secure door lock system that opens only with an authorized RFID card.<br><br>
+    <b>Components Needed:</b><br>
+    <b>* </b>Arduino UNO<br>
+    <b>* </b>RFID Module (RC522)<br>
+    <b>* </b>Servo Motor (to open/close the lock)<br>
+    <b>* </b>Buzzer (optional)<br>
+    <b>* </b>RFID Tags/Cards<br><br>
+    How it works:<br>
+    When an RFID card is scanned, the Arduino checks if it’s an authorized card. <br>
+    If yes, it activates the servo to unlock the door.<br>
+     If not, it does nothing or sounds a buzzer.<br><br><hr>
+     <b>other source :</b><br>
+     <a href="https://www.avigilon.com/blog/rfid-readers">Avigilon</a>
+     <a href="https://www.assaabloy.com/gh/en/stories/blogs/rfid-door-locks--smart-entry-systems">Assaabloy</a>
+     <a href="https://srituhobby.com/how-to-make-a-rfid-door-lock-with-arduino/?srsltid=AfmBOooa0nJLjdokjGF16BW0TfZx4VOmMXwRjUUntM5QnRXaaPj2OPmJ">Srituhobby</a>
+ </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>

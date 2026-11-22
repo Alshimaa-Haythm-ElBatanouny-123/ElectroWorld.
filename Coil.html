@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Coil</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <div>
+    <h1>Coil</h1>
+  </div>
+  <section>
+      <img src="https://www.electronics-tutorials.ws/wp-content/uploads/2024/04/coil-inductor.jpg" width="300px" height="300px" ><br><br>
+    An electrical coil (also referred to as an inductor) is a passive electrical component made up of a conductor, usually wire, wound into a spiral or helix.<br>
+    It plays a vital role in various electrical and electronic systems.<br><br><hr>
+    <h3>Key Features of an Electrical Coil:</h3>
+    <b>1. Structure:</b><br>
+    The coil is made by winding a conducting material (like copper wire) around a core. The core can be air, iron, or another material to enhance magnetic properties.<br><br>
+    <b>2. Principle of Operation:</b><br>
+    When an electric current flows through the coil, it generates a magnetic field around it. This is known as electromagnetic induction.<br>
+    The magnetic field stores energy, which can later be released back into the circuit.<br><br><hr>
+    <h3>3. Key Properties:</h3>
+    
+    <img src="https://www.researchgate.net/publication/305479899/figure/fig2/AS:667721708617731@1536208669493/Configuration-of-the-coaxial-air-core-finite-coils-The-transmitter-T-of-length-L-T.png" width="250px" height="250px"> <br><br>
+    <b>Inductance:</b><br>
+     The ability of the coil to resist changes in current and store energy in the magnetic field. Measured in henries (H)<br><br>
+    <b>Resistance:</b><br>
+    The coil's wire has some inherent resistance, which can cause power loss as heat.<br><br>
+    <b>Reactance:</b><br>
+    Opposition to the alternating current due to inductance.<br><br><hr>
+    <h3> Types of Electrical Coils:</h3>
+    <b>Air-Core Coil:</b> <br>
+    No core material, used at high frequencies.<br><br>
+    <b>Iron-Core Coil:</b><br>
+    Uses an iron core to increase magnetic field strength, common in transformers.<br><br>
+    <b>Toroidal Coil:</b><br>
+    A donut-shaped coil that confines the magnetic field, reducing electromagnetic interference (EMI).<br>
+    <br><hr>
+    <h3>A collection of important videos for explanation</h3>
+      <a href="https://www.youtube.com/watch?v=TuMfYerUjXI" > <h4>First video</h4> </a>
+      <a href="https://www.youtube.com/watch?v=vm5war_npJY " > <h4>Second video</h4> </a>
+    <a href= "https://www.youtube.com/watch?v=VKz-WJk_D60"> <h4>Third video </h4></a>
+   <br><br><hr>
+    <h3>Applications:</h3>
+    <b>Transformers:</b><br>
+    Coils transfer electrical energy between circuits through electromagnetic induction.<br><br>
+    <b>Motors and Generators:</b><br>
+    Coils generate magnetic fields to convert electrical energy to mechanical energy and vice versa.<br><br>
+    <b>Inductors:</b><br>
+    Coils are used in electronic circuits to block high-frequency signals while allowing low-frequency ones.<br><br>
+    <b>Relays and Solenoids:</b><br>
+    Coils control mechanical movements in electromechanical devices.<br><br><hr>
+    <h3> Examples in Everyday Use:</h3>
+    Wireless chargers, radio frequency devices, and power supplies all use electrical coils.<br><br><hr>
+    An electrical coil is fundamental in harnessing electromagnetic principles, making it indispensable in modern electrical and electronic applications.
+    <br><hr>
+    <h3>Coil Inductance Calculation</h3>
+    <br><br>
+    
+    <label for="turns">Number of Turns (N):</label>
+    <input type="number" id="turns" placeholder="Enter number of turns" required><br><br>
+
+    <label for="permeability">Magnetic Permeability (μ) in H/m:</label>
+    <input type="number" id="permeability" value="1.257e-6" step="any" required><br><br>
+
+    <label for="area">Cross-Sectional Area (A in m²):</label>
+    <input type="number" id="area" placeholder="Enter area in square meters" required><br><br>
+
+    <label for="length">Length of Coil (l in meters):</label>
+    <input type="number" id="length" placeholder="Enter coil length in meters" required><br><br>
+
+    <button onclick="calculateInductance()">Calculate Inductance</button><br><br>
+
+    <b>Inductance (L): <span id="result"></span> Henrys (H)</b>
+
+    <script>
+        function calculateInductance() {
+            var turns = document.getElementById("turns").value;
+            var permeability = document.getElementById("permeability").value;
+            var area = document.getElementById("area").value;
+            var length = document.getElementById("length").value;
+
+            if (turns && permeability && area && length) {
+                var inductance = (Math.pow(turns, 2) * permeability * area) / length;
+                document.getElementById("result").innerText = inductance.toExponential(2);
+            } else {
+                alert("Please enter all the values.");
+            }
+        }
+    </script>
+  <h3>Coil Quiz</h3>
+  <form>
+    <p>1. What is the main function of a coil in an electronic circuit?</p>
+    <input type="radio" name="q1">To store energy in the form of a magnetic field<br>
+    <input type="radio" name="q1">To resist the flow of current<br>
+    <input type="radio" name="q1">To convert electrical energy to heat<br>
+    <input type="radio" name="q1">To amplify signals<br>
+
+    <p>2. What is the unit of inductance?</p>
+    <input type="radio" name="q2">Ohm<br>
+    <input type="radio" name="q2">Volt<br>
+    <input type="radio" name="q2">Ampere<br>
+    <input type="radio" name="q2">Henry<br>
+
+    <p>3. What happens when the current through a coil changes?</p>
+    <input type="radio" name="q3">The magnetic field around it collapses<br>
+    <input type="radio" name="q3">It generates a voltage that opposes the change in current<br>
+    <input type="radio" name="q3">It stops conducting<br>
+    <input type="radio" name="q3">It starts emitting light<br>
+
+    <p>4. What does the inductance of a coil depend on?</p>
+    <input type="radio" name="q4">The material of the coil<br>
+    <input type="radio" name="q4">The length of the wire<br>
+    <input type="radio" name="q4">The number of turns in the coil<br>
+    <input type="radio" name="q4">All of the above<br>
+
+    <p>5. What is a common use of coils in electrical circuits?</p>
+    <input type="radio" name="q5">To store electrical charge<br>
+    <input type="radio" name="q5">In filters to block or pass specific frequencies<br>
+    <input type="radio" name="q5">In capacitors for energy storage<br>
+    <input type="radio" name="q5">In light bulbs to produce light<br>
+
+    <p>6. What is the relationship between voltage and current in a coil?</p>
+    <input type="radio" name="q6">They are directly proportional<br>
+    <input type="radio" name="q6">They are inversely proportional<br>
+    <input type="radio" name="q6">Voltage leads current by 90 degrees in an inductive circuit<br>
+    <input type="radio" name="q6">There is no relationship<br>
+
+    <p>7. What is the effect of increasing the number of turns in a coil?</p>
+    <input type="radio" name="q7">The resistance increases<br>
+    <input type="radio" name="q7">The inductance increases<br>
+    <input type="radio" name="q7">The current carrying capacity increases<br>
+    <input type="radio" name="q7">The voltage decreases<br>
+
+    <p>8. In what type of circuit would you typically find a coil?</p>
+    <input type="radio" name="q8">In power supply circuits<br>
+    <input type="radio" name="q8">In series with resistors<br>
+    <input type="radio" name="q8">In oscillators and transformers<br>
+    <input type="radio" name="q8">In heat-generating circuits<br>
+
+    <p>9. What happens if a coil is placed in a high-frequency AC circuit?</p>
+    <input type="radio" name="q9">It becomes a short circuit<br>
+    <input type="radio" name="q9">It behaves like a capacitor<br>
+    <input type="radio" name="q9">It resists the change in current<br>
+    <input type="radio" name="q9">It emits radio waves<br>
+
+    <p>10. What does the coil's core material affect?</p>
+    <input type="radio" name="q10">Its resistance<br>
+    <input type="radio" name="q10">Its ability to store energy<br>
+    <input type="radio" name="q10">Its inductance<br>
+    <input type="radio" name="q10">Its frequency response<br>
+  </form>
+  <h3> <summary>Answer</summary></h3>
+  <details>
+    <ul>
+        1. To store energy in the form of a magnetic field<br>
+        2. Henry<br>
+        3. It generates a voltage that opposes the change in current<br>
+        4. All of the above<br>
+        5. In filters to block or pass specific frequencies<br>
+        6. Voltage leads current by 90 degrees in an inductive circuit<br>
+        7. The inductance increases<br>
+        8. In oscillators and transformers<br>
+        9. It resists the change in current<br>
+        10. Its inductance<br>
+    </ul>
+  </details>
+    <h3 >A collection of other sources</h3>
+    <a href="https://ar.wikipedia.org/wiki/%D9%85%D9%84%D9%81_%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A" > <h4>Wikipedia</h4> </a>
+   <a href=" https://kahraba4u.com/%D8%A7%D9%84%D9%85%D9%84%D9%81-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A/" > <h4>Kahraba4u</h4> </a>
+  <a href="https://www.alfreed-ph.com/2014/02/blog-post_17.html" > <h4>Alfreed-ph</h4></a>
+  <h3 >Outlets selling this component</h3>
+  <table style="margin: auto; width: 250px;">
+   <tr>
+       <td>
+           <a href=" https://www.amazon.eg/s?k=Coil&crid=WMKK64UQUUJ2&sprefix=coil%2Caps%2C320&ref=nb_sb_noss_1  "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQXj_ysdjpNvRznJdDOk9uiH90jvkgPF-yg&s"  width="150px" height="150px"> Amazon</h4> </a>
+       </td>
+       <td>
+           <a href=" https://www.ram-e-shop.com/ar/website/search?search=Coil&order=name+asc " > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIn5MUXcOCMQHkQ41Cxsbr46v64ZLnGxKqMA&s" width="150px " height="150px"> Ram Electronics </a>
+       </td>
+   </tr>
+  </table>
+  </section>
+</body>
+<script>
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a");
+      links.forEach(link => {
+          link.addEventListener("click", function () {
+              console.log("تم الضغط على رابط: " + link.href);
+          });
+      });
+      const image = document.querySelector("img");
+      if (image) {
+          image.addEventListener("click", function () {
+              image.style.transform = "scale(1.2)";
+              image.style.transition = "transform 0.3s ease";
+              setTimeout(() => {
+                  image.style.transform = "scale(1)";
+              }, 600);
+          });
+      }
+      const title = document.querySelector("h1");
+      if (title) {
+          title.addEventListener("mouseenter", function () {
+              title.style.color = "yellow";
+          });
+          title.addEventListener("mouseleave", function () {
+              title.style.color = "white";
+          });
+      }
+  });
+  </script>
+</html>

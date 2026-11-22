@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sound Sensor</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <h1><i><ins>Sound Sensor</ins></i></h1>
+    </div>
+    <section>
+            <br><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdsc8Ss3LWCKLcdd_6ywJFD7I1fAf3BunI8g&s" width="300px" height="300px"><br><br>
+            A sound sensor is an electronic device that detects sound waves (vibrations in the air) and converts them into electrical signals.<br>
+             These sensors are commonly used in audio-related applications and voice-activated systems.<br><br><hr>
+         <h3>   Working Principle</h3>
+            A sound sensor typically uses a microphone as the main sensing element. <br>
+            Most sound sensors use an electret microphone, which consists of:<br><br>
+           <b>* </b> A diaphragm (sensitive to sound vibrations)<br>
+           <b>* </b> A backplate<br>
+           <b>* </b>  An internal amplifier circuit<br><br>
+            When sound waves hit the microphone diaphragm, it vibrates and changes the distance between the diaphragm and the backplate.<br>
+             This change generates a small electrical signal, which is then amplified and processed.<br><br><hr>
+             <h3>A collection of important videos for explanation</h3>
+             <a href="https://www.youtube.com/watch?v=xTgJg7KkMkw&pp=ygUTc291bmQgc2Vuc29yINi02LHYrQ%3D%3D" > <h4>First video</h4> </a>
+             <a href=" https://www.youtube.com/watch?v=Zvj_3whUt6M&pp=ygUjc291bmQgc2Vuc29yINi02LHYrSDZg9mK2YEg2YrYudmF2YQ%3D" > <h4>Second video</h4> </a>
+           <a href="https://www.youtube.com/watch?v=1PenBgWgz7A&pp=ygUTc291bmQgc2Vuc29yINi02LHYrQ%3D%3D" > <h4> Third video </h4></a>
+            <br><br><hr>         
+           <h3> Types of Sound Sensors</h3>
+           <b> 1. Analog Sound Sensors</b><br>
+           <b>* </b>Output a continuous analog voltage proportional to the loudness of the sound.<br>
+           <b>* </b>Used when you need to measure the exact sound level.<br><br>
+            <b>2. Digital Sound Sensors</b><br>
+            <b>* </b> Output HIGH or LOW signals depending on whether the sound level crosses a preset threshold.<br>
+            <b>* </b>Used for simple sound detection (e.g., clap detection).<br>
+            <h3>Common Sound Sensors</h3>
+            <b>* </b> KY-038 Sound Sensor<br>
+            Has both analog and digital outputs.<br>
+            Can be used with Arduino to detect noise or claps.<br><br>
+            <b>* </b> Grove Sound Sensor<br>
+            Easy-to-use module with analog output.<br><br><hr>
+            <h3>Applications</h3>
+            <b>* </b>  Voice-activated systems (e.g., smart assistants)<br>
+            <b>* </b> Security systems (e.g., glass break detection)<br>
+            <b>* </b> Clap switches (turning on lights or devices)<br>
+            <b>* </b> Sound level monitoring (in classrooms, factories, etc.)<br>
+            <b>* </b> Audio recording and analysis<br><br><hr>
+           <h3> Important Specifications</h3>
+        <b>    Sensitivity: </b><br>
+        How well the sensor picks up soft or loud sounds.<br><br>
+           <b> Frequency range:</b><br>
+            The range of sound frequencies the sensor can detect.<br><br>
+            <b>Operating voltage:</b><br>
+             Typically 3.3V or 5V.<br><br>
+           <b> Output type:</b><br>
+            Analog, digital, or both.<br><br><hr>
+         <h3>   Example Use with Arduino</h3>
+            Connect the sound sensor to an analog input pin.<br>
+            Read the voltage level.<br>
+            Use the reading to trigger events (e.g., if sound > threshold, turn on an LED).<br>
+            <br><hr>
+<h3>Sound Sensor Quiz</h3>
+
+<form>
+
+  <p>1. What is the main purpose of a sound sensor?</p>
+  <input type="radio" name="q1">To detect light levels<br>
+  <input type="radio" name="q1">To measure sound intensity<br>
+  <input type="radio" name="q1">To detect temperature<br>
+  <input type="radio" name="q1">To detect motion<br>
+
+  <p>2. What type of signal does a sound sensor typically output?</p>
+  <input type="radio" name="q2">Analog signal<br>
+  <input type="radio" name="q2">Digital signal<br>
+  <input type="radio" name="q2">Pulse-width modulation (PWM) signal<br>
+  <input type="radio" name="q2">Voltage spike<br>
+
+  <p>3. What is a common application of sound sensors?</p>
+  <input type="radio" name="q3">Monitoring room temperature<br>
+  <input type="radio" name="q3">Detecting the presence of loud noises or sounds<br>
+  <input type="radio" name="q3">Measuring light intensity<br>
+  <input type="radio" name="q3">Controlling electric motors<br>
+
+  <p>4. What component is commonly used inside a sound sensor?</p>
+  <input type="radio" name="q4">Photodiode<br>
+  <input type="radio" name="q4">Microphone<br>
+  <input type="radio" name="q4">Thermistor<br>
+  <input type="radio" name="q4">Capacitor<br>
+
+  <p>5. Which of the following is NOT typically detected by a sound sensor?</p>
+  <input type="radio" name="q5">Clapping<br>
+  <input type="radio" name="q5">Snapping fingers<br>
+  <input type="radio" name="q5">Voice recognition<br>
+  <input type="radio" name="q5">Voltage fluctuations<br>
+
+  <p>6. How does a sound sensor usually measure sound?</p>
+  <input type="radio" name="q6">By measuring light reflection<br>
+  <input type="radio" name="q6">By detecting vibrations in the air<br>
+  <input type="radio" name="q6">By detecting temperature changes<br>
+  <input type="radio" name="q6">By measuring electromagnetic fields<br>
+
+  <p>7. What is the frequency range that a typical sound sensor can detect?</p>
+  <input type="radio" name="q7">0 Hz to 100 Hz<br>
+  <input type="radio" name="q7">20 Hz to 20,000 Hz (20 kHz)<br>
+  <input type="radio" name="q7">50 Hz to 1,000 Hz<br>
+  <input type="radio" name="q7">1 kHz to 10 kHz<br>
+
+  <p>8. What can a sound sensor be used for in home automation systems?</p>
+  <input type="radio" name="q8">Controlling lighting based on sound levels<br>
+  <input type="radio" name="q8">Detecting presence of people<br>
+  <input type="radio" name="q8">Controlling temperature based on noise<br>
+  <input type="radio" name="q8">Measuring humidity levels<br>
+
+  <p>9. What is one limitation of sound sensors?</p>
+  <input type="radio" name="q9">They are not sensitive to very loud sounds<br>
+  <input type="radio" name="q9">They can only detect specific frequencies<br>
+  <input type="radio" name="q9">They can be affected by background noise<br>
+  <input type="radio" name="q9">They require a lot of power to operate<br>
+
+  <p>10. What type of environments can benefit from sound sensors?</p>
+  <input type="radio" name="q10">Quiet environments only<br>
+  <input type="radio" name="q10">High noise level environments<br>
+  <input type="radio" name="q10">Environments with fluctuating light levels<br>
+  <input type="radio" name="q10">Environments with high humidity levels<br>
+
+</form>
+
+<h3><summary>Answer</summary></h3>
+<details>
+  <ul>
+    1. To measure sound intensity<br>
+    2. Analog signal<br>
+    3. Detecting the presence of loud noises or sounds<br>
+    4. Microphone<br>
+    5. Voltage fluctuations<br>
+    6. By detecting vibrations in the air<br>
+    7. 20 Hz to 20,000 Hz (20 kHz)<br>
+    8. Controlling lighting based on sound levels<br>
+    9. They can be affected by background noise<br>
+    10. High noise level environments<br>
+  </ul>
+</details>
+            <h3 >A collection of other sources</h3>
+            <a href="https://www.watelectronics.com/sound-sensor/" > <h4> Watelectronics</h4> </a>
+            <a href="https://ielectrony.com/product/%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B4%D8%B9%D8%A7%D8%B1-%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D8%B5%D9%88%D8%AA-lm393/?srsltid=AfmBOoo8XiHLOAtabazdx9w5Zgtwcnf-0u1Y0bPj0zI9O30vv3ifVehK" > <h4>Ielectrony</h4> </a>
+           <a href="https://lastminuteengineers.com/sound-sensor-arduino-tutorial/" > <h4> Lastminuteengineers</h4></a>
+           <h3 >Outlets selling this component</h3>
+           <table style="margin: auto; width: 250px;">
+            <tr>
+                <td>
+                    <a href="https://www.amazon.eg/s?k=%D8%AD%D8%B3%D8%A7%D8%B3+%D8%A7%D9%84%D8%B5%D9%88%D8%AA&crid=314ZUR1X3J6UM&sprefix=%D8%AD%D8%B3%D8%A7%D8%B3+%D8%A7%D9%84%D8%B5%D9%88%D8%AA%2Caps%2C157&ref=nb_sb_noss_1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQXj_ysdjpNvRznJdDOk9uiH90jvkgPF-yg&s"  width="150px" height="150px"> Amazon</h4> </a>
+                </td>
+                 <td>
+                    <a href="https://www.electrokit.com/ljudsensor-analogdigital" > <img src="https://electrokitperu.com/wp-content/uploads/2022/03/Electrokit_2022_black2.png" width="150px " height="150px">Electro kit </a>
+                </td>
+                <td>
+                   <a href="https://www.ram-e-shop.com/ar/website/search?search=sound+sensor&order=name+asc " > <img src="https://content.jdmagicbox.com/comp/porbandar/n4/9999px286.x286.140323144540.c2n4/catalogue/ram-electronics-mg-road-porbandar-porbandar-electronic-goods-showrooms-nd021nvl2j-250.jpg" width="150px " height="150px">Ram Electronic</a>
+               </td>
+            </tr>
+           </table>
+    </section>
+</body>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>
+  

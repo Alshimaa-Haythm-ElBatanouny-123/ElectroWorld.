@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Audio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg-dark: #0b1120;
+        --bg-gradient: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+        --card-bg: rgba(30, 41, 59, 0.65);
+        --card-border: rgba(148, 163, 184, 0.15);
+        --accent-green: #a2d134;
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* الخلفية العامة */
+    body {
+        background: var(--bg-dark);
+        background-image: var(--bg-gradient);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-main);
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+        line-height: 1.7;
+    }
+
+    /* تنسيق الصور العامة */
+    img {
+        border-radius: 14px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    /* تنسيق الشريط العلوي والعنوان */
+    #name {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 20px 5%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h1 {
+        color: var(--accent-green);
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+        text-shadow: 0 0 15px rgba(162, 209, 52, 0.3);
+    }
+
+    /* صندوق المعلومات والشرح */
+    #information {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid var(--card-border);
+        padding: 30px;
+        border-radius: 16px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 25px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    #information mark {
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent-cyan);
+        padding: 2px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* تنسيق الجداول والبطاقات بداخلها */
+    table {
+        width: 90%;
+        max-width: 1280px;
+        margin: 35px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        border: none;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+    }
+
+    td figure {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 18px;
+        margin: 0;
+        border-radius: 16px;
+        transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    td figure:hover {
+        transform: translateY(-8px);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    /* صور العناصر داخل الجداول */
+    td img {
+        border-radius: 12px;
+        background: #ffffff;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        box-shadow: none;
+    }
+
+    td figure:hover img {
+        transform: scale(1.06);
+    }
+
+    /* تصميم الروابط */
+    a {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: var(--accent-gold);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--accent-cyan);
+    }
+
+    /* التجاوب مع شاشات الموبايل */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        #information {
+            width: 92%;
+            padding: 20px;
+        }
+        table, tbody, tr, td {
+            display: block;
+            width: 100%;
+        }
+        td {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+<body>
+<div>
+    <h1><i><ins>Audio</ins></i></h1>
+</div><br>
+    <section>
+        <a href="../../Face/index.html"></a>
+        <img src="https://www.abcomponents.co.uk/wp-content/uploads/2019/12/Buzzer-vs-speaker-2.jpg" width="720px" height="360px"><br>
+        <table border="7">
+            <tbody>
+                <tr>
+                    <td><figure>
+                        <a href="Buzzer.html" title=" Go To Buzzer"><img src=" https://circuitdigest.com/sites/default/files/inlineimages/u5/buzzer-pinout.jpg" width="150px" height="150px"><br><b> Buzzer</b></a>
+                    </figure></td>
+                    <td><figure>
+                        <a href=" Loudspeaker.html" title=" Go To Loudspeaker"><img src="https://img4.dhresource.com/webp/m/0x0/f3/albu/jc/l/29/47e637d1-6aad-4314-ada1-6237d787470d.jpg" width="150px" height="150px"><br><b> Loudspeaker</b></a>
+                    </figure></td>
+                    <td><figure>
+                        <a href="piezo transduser.html " title=" Go To piezo transduser"><img src="https://images.squarespace-cdn.com/content/v1/556646a4e4b0bda793faf918/1599446722365-3V4C3R81VNVAQL5QF7C4/PIEZOTRANS_Piezo_Transducer.jpg?format=750w" width="150px" height="150px"><br><b>piezo transduser </b></a>
+                    </figure></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // تلوين الخلفية عند المرور على الصور
+    const figures = document.querySelectorAll("td figure");
+    figures.forEach(figure => {
+        figure.addEventListener("mouseenter", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        });
+        figure.addEventListener("mouseleave", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+        });
+    });
+
+    // رسالة ترحيب بسيطة عند فتح الصفحة
+    console.log("Welcome to the Capacitor Page!");
+});
+</script>
+</html>

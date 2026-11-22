@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Sensore</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg-dark: #0b1120;
+        --bg-gradient: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+        --card-bg: rgba(30, 41, 59, 0.65);
+        --card-border: rgba(148, 163, 184, 0.15);
+        --accent-green: #a2d134;
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* الخلفية العامة */
+    body {
+        background: var(--bg-dark);
+        background-image: var(--bg-gradient);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-main);
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+        line-height: 1.7;
+    }
+
+    /* تنسيق الصور العامة */
+    img {
+        border-radius: 14px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    /* تنسيق الشريط العلوي والعنوان */
+    #name {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 20px 5%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h1 {
+        color: var(--accent-green);
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+        text-shadow: 0 0 15px rgba(162, 209, 52, 0.3);
+    }
+
+    /* صندوق المعلومات والشرح */
+    #information {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid var(--card-border);
+        padding: 30px;
+        border-radius: 16px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 25px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    #information mark {
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent-cyan);
+        padding: 2px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* تنسيق الجداول والبطاقات بداخلها */
+    table {
+        width: 90%;
+        max-width: 1280px;
+        margin: 35px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        border: none;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+    }
+
+    td figure {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 18px;
+        margin: 0;
+        border-radius: 16px;
+        transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    td figure:hover {
+        transform: translateY(-8px);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    /* صور العناصر داخل الجداول */
+    td img {
+        border-radius: 12px;
+        background: #ffffff;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        box-shadow: none;
+    }
+
+    td figure:hover img {
+        transform: scale(1.06);
+    }
+
+    /* تصميم الروابط */
+    a {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: var(--accent-gold);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--accent-cyan);
+    }
+
+    /* التجاوب مع شاشات الموبايل */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        #information {
+            width: 92%;
+            padding: 20px;
+        }
+        table, tbody, tr, td {
+            display: block;
+            width: 100%;
+        }
+        td {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+<body>
+    <h1><ins><i>Temperature Sensore</i></ins></h1><br><br>
+    <section>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIONaOwjWEHuTpgYgMxCm9YzMNgIAJpNEjETIsRN6mCLP07tMhGKr5fqsKyIANBdJFNME&usqp=CAU" width="800px" height="400px"><br>
+        <table border="8">
+            <tr>
+                 <td><figure>
+                    <a href="A Digital Thermometer.html" title="Go To A Digital Thermometer" ><img src=" data:image/jpeg;base64,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" width="150px" height="150px" ><br><b> Digital Thermometer </b> </a>
+                 </figure></td>
+                 <td><figure>
+                    <a href="Thermistor.html" title="Go To Thermistor" ><img src="data:image/jpeg;base64,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 " width="150px" height="150px" ><br><b> Thermistor</b> </a>
+                 </figure></td>
+            </tr>
+        </table>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // تلوين الخلفية عند المرور على الصور
+    const figures = document.querySelectorAll("td figure");
+    figures.forEach(figure => {
+        figure.addEventListener("mouseenter", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        });
+        figure.addEventListener("mouseleave", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+        });
+    });
+
+    // رسالة ترحيب بسيطة عند فتح الصفحة
+});
+</script>
+</html>

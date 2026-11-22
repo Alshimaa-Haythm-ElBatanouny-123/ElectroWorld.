@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Relays</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg-dark: #0b1120;
+        --bg-gradient: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+        --card-bg: rgba(30, 41, 59, 0.65);
+        --card-border: rgba(148, 163, 184, 0.15);
+        --accent-green: #a2d134;
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* الخلفية العامة */
+    body {
+        background: var(--bg-dark);
+        background-image: var(--bg-gradient);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-main);
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+        line-height: 1.7;
+    }
+
+    /* تنسيق الصور العامة */
+    img {
+        border-radius: 14px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    /* تنسيق الشريط العلوي والعنوان */
+    #name {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 20px 5%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h1 {
+        color: var(--accent-green);
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+        text-shadow: 0 0 15px rgba(162, 209, 52, 0.3);
+    }
+
+    /* صندوق المعلومات والشرح */
+    #information {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid var(--card-border);
+        padding: 30px;
+        border-radius: 16px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 25px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    #information mark {
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent-cyan);
+        padding: 2px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* تنسيق الجداول والبطاقات بداخلها */
+    table {
+        width: 90%;
+        max-width: 1280px;
+        margin: 35px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        border: none;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+    }
+
+    td figure {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 18px;
+        margin: 0;
+        border-radius: 16px;
+        transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    td figure:hover {
+        transform: translateY(-8px);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    /* صور العناصر داخل الجداول */
+    td img {
+        border-radius: 12px;
+        background: #ffffff;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        box-shadow: none;
+    }
+
+    td figure:hover img {
+        transform: scale(1.06);
+    }
+
+    /* تصميم الروابط */
+    a {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: var(--accent-gold);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--accent-cyan);
+    }
+
+    /* التجاوب مع شاشات الموبايل */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        #information {
+            width: 92%;
+            padding: 20px;
+        }
+        table, tbody, tr, td {
+            display: block;
+            width: 100%;
+        }
+        td {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+    <h1><ins><i>Relays</i></ins></h1><br><br>
+   <section>
+    <img src="https://circuitspedia.com/wp-content/uploads/2020/10/relay.jpg" width="715px" height="390px"><br>
+    <table border="4">
+        <tr>
+            <td><figure>
+                <a href="A DPDT relay.html" title="GO To A DPDT relay" ><img src="https://assets.rs-online.com/f_auto,q_auto,c_scale,w_400/72340876.jpg" width="150px" height="150px"><br><b> DPDT relay </b></a> 
+            </figure></td>
+            <td><figure>
+                <a href="A Reed Relay.html" title="GO To Reed Relay" > <img src="data:image/jpeg;base64,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" width="150px" height="150px"><br><b>Reed Relay </b></a> </a>
+            </figure></td>
+            <td><figure>
+                <a href="An SPDT relay.html" title="GO To SPDT relay" > <img src="https://ifuturetech.org/wp-content/uploads/2020/04/Relay-Dc-5V-7a-250v-JQC3F-C-S-DC5V-sugar-cube-for-wifi-remote-control-hot-free-shipping-india.jpg" width="150px" height="150px"><br><b>SPDT relay</b></a> </a>
+            </figure></td>
+        </tr>
+    </table>
+   </section>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // تلوين الخلفية عند المرور على الصور
+    const figures = document.querySelectorAll("td figure");
+    figures.forEach(figure => {
+        figure.addEventListener("mouseenter", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        });
+        figure.addEventListener("mouseleave", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+        });
+    });
+
+    // رسالة ترحيب بسيطة عند فتح الصفحة
+    console.log("Welcome to the Capacitor Page!");
+});
+</script>
+</html>

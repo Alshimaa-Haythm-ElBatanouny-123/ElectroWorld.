@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resistor</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div>  <h1 id="name">Resistor</h1></div>
+  <section>
+
+      <img src="https://www.codrey.com/wp-content/uploads/2017/11/resistor-basics.png" width="300px" height="300px" ><br>
+      A resistor is a fundamental electronic component used in circuits to limit or regulate the flow of electrical current.<br>
+      It resists the flow of electrons, which causes a drop in voltage across its terminals.<br>
+       Resistors are measured in ohms (O), which is the unit of electrical resistance.<br>
+       <br><hr>
+       <h3>A collection of important videos for explanation</h3>
+         <a href="https://www.youtube.com/watch?v=g1_jaCDdvEI" > <h4>First video</h4> </a>
+         <a href=" https://www.youtube.com/watch?v=n5HfTjrEQRY" > <h4>Second video</h4> </a>
+       <a href="https://www.youtube.com/watch?v=r7XI0jrgWX8" > <h4> Third video </h4></a>
+      <a href="https://www.youtube.com/watch?v=p0rX53wSYP4"><h4>Fourth Video</h4></a>
+      <br><br><hr>
+      <h3>How a Resistor Works</h3>
+      A resistor works by converting electrical energy into heat, which reduces the current flow in the circuit.<br><br><hr>
+   <h3>It obeys Ohm's Law</h3><br>
+     <mark> V = I \ R</mark><br><br>
+      * Voltage across the resistor (in volts)<br>
+      * Current through the resistor (in amperes)<br>
+      * Resistance (in ohms)<br><br><hr>
+  <h3>Types of Resistors:</h3><br>
+      <b>1. Fixed Resistors:</b><br> 
+      <img src="https://www.elprocus.com/wp-content/uploads/Carbon-Film-Resistor.jpg" width="100px" height="100px" >
+      Have a constant resistance value.<br><br>
+      <b>Examples:</b> Carbon film resistors, metal film resistors.<br><br>
+     <b> 2. Variable Resistors:</b> <br>
+     <img src="https://5.imimg.com/data5/QZ/MK/YD/SELLER-28229647/electric-variable-resistor-500x500.jpg" width="100px" height="100px" >
+     Allow the resistance to be adjusted.<br><br>
+     <b> Examples:</b> Potentiometers, rheostats.<br><br>
+    <b>  3. Special Resistors: </b><br>
+    <img src="https://www.widap.com/wp-content/uploads/artikel_bild_36.jpg" width="100px" height="100px" >
+    Designed for specific purposes, such as thermistors (temperature-dependent) and light-dependent resistors (LDRs).<br><br><hr>
+  <h3>Applications of Resistors:</h3><br>
+    <b>  1. Current Limiting:</b> Prevents excessive current that could damage components.<br>
+     <b> 2. Voltage Division:</b> Creates a specific voltage level in circuits.<br>
+     <b> 3. Signal Conditioning:</b> Adjusts or filters signals in electronic devices.<br>
+     <b> 4. Heat Generation:</b> In appliances like electric heaters.<br><br><hr>
+
+    <h3>Resistance Simulation</h3>
+    <br><br>
+<b> <b>   R = V / I </b></b>
+    <br><br>
+    <label for="voltage">Voltage (V):</label>
+    <input type="number" id="voltage" placeholder="Enter voltage" required><br><br>
+
+    <label for="current">Current (I):</label>
+    <input type="number" id="current" placeholder="Enter current" required><br><br>
+
+    <button onclick="calculateResistance()">Calculate Resistance</button><br>
+
+    <b>Resistance (R): <span id="result"></span> Ohms</b>
+
+    <script>
+        function calculateResistance() {
+            var voltage = document.getElementById("voltage").value;
+            var current = document.getElementById("current").value;
+
+            if (voltage && current) {
+                var resistance = voltage / current;
+                document.getElementById("result").innerText = resistance;
+            } else {
+                alert("Please enter voltage and current values");
+            }
+        }
+    </script>
+    <h3>Quiz on Electrical Resistors</h3>
+    <form id="quizForm">
+        <h2>1. What is the unit of electrical resistance?</h2>
+        <input type="radio" name="q1" value="Ohm" onclick="checkAnswer('q1', 'Ohm')"> Ohm<br>
+        <input type="radio" name="q1" value="Volt" onclick="checkAnswer('q1', 'Volt')"> Volt<br>
+        <input type="radio" name="q1" value="Ampere" onclick="checkAnswer('q1', 'Ampere')"> Ampere<br>
+
+        <h2>2. Ohm's law states that:</h2>
+        <input type="radio" name="q2" value="V = I * R" onclick="checkAnswer('q2', 'V = I * R')"> V = I * R<br>
+        <input type="radio" name="q2" value="V = R * I" onclick="checkAnswer('q2', 'V = R * I')"> V = R * I<br>
+        <input type="radio" name="q2" value="I = V * R" onclick="checkAnswer('q2', 'I = V * R')"> I = V * R<br>
+
+        <h2>3. Which of these resistors is used to adjust current?</h2>
+        <input type="radio" name="q3" value="Variable resistor" onclick="checkAnswer('q3', 'Variable resistor')"> Variable resistor<br>
+        <input type="radio" name="q3" value="Fixed resistor" onclick="checkAnswer('q3', 'Fixed resistor')"> Fixed resistor<br>
+
+        <h2>4. Which resistor can stop current flow in a circuit?</h2>
+        <input type="radio" name="q4" value="High resistance" onclick="checkAnswer('q4', 'High resistance')"> High resistance<br>
+        <input type="radio" name="q4" value="Low resistance" onclick="checkAnswer('q4', 'Low resistance')"> Low resistance<br>
+
+        <h2>5. What is the effect of resistance on current?</h2>
+        <input type="radio" name="q5" value="Reduces current" onclick="checkAnswer('q5', 'Reduces current')"> Reduces current<br>
+        <input type="radio" name="q5" value="Increases current" onclick="checkAnswer('q5', 'Increases current')"> Increases current<br>
+
+        <h2>6. What is the relationship between resistance and wire length?</h2>
+        <input type="radio" name="q6" value="Resistance increases with length" onclick="checkAnswer('q6', 'Resistance increases with length')"> Resistance increases with length<br>
+        <input type="radio" name="q6" value="Resistance decreases with length" onclick="checkAnswer('q6', 'Resistance decreases with length')"> Resistance decreases with length<br>
+
+        <h2>7. Which of these does not affect resistance?</h2>
+        <input type="radio" name="q7" value="Color" onclick="checkAnswer('q7', 'Color')"> Color<br>
+        <input type="radio" name="q7" value="Material used" onclick="checkAnswer('q7', 'Material used')"> Material used<br>
+        <input type="radio" name="q7" value="Length and width" onclick="checkAnswer('q7', 'Length and width')"> Length and width<br>
+
+        <h2>8. Which resistor affects the current in a circuit?</h2>
+        <input type="radio" name="q8" value="Variable resistor" onclick="checkAnswer('q8', 'Variable resistor')"> Variable resistor<br>
+        <input type="radio" name="q8" value="Fixed resistor" onclick="checkAnswer('q8', 'Fixed resistor')"> Fixed resistor<br>
+
+        <h2>9. In an electric circuit, if the resistance is zero, what happens to the current?</h2>
+        <input type="radio" name="q9" value="Current increases infinitely" onclick="checkAnswer('q9', 'Current increases infinitely')"> Current increases infinitely<br>
+        <input type="radio" name="q9" value="Current becomes zero" onclick="checkAnswer('q9', 'Current becomes zero')"> Current becomes zero<br>
+
+        <h2>10. Which type of resistor is used in precise electronic circuits?</h2>
+        <input type="radio" name="q10" value="Precision resistor" onclick="checkAnswer('q10', 'Precision resistor')"> Precision resistor<br>
+        <input type="radio" name="q10" value="Large resistor" onclick="checkAnswer('q10', 'Large resistor')"> Large resistor<br>
+        <!DOCTYPE html>
+        <h3> <summary>Answer</summary></h3>
+<details>
+  <ul>
+    q1: 'Ohm'<br>
+    q2: 'V = I * R'<br>
+    q3: 'Variable resistor'<br>
+    q4: 'High resistance'<br>
+    q5: 'Reduces current'<br>
+    q6: 'Resistance increases with length'<br>
+    q7: 'Color'<br>
+    q8: 'Variable resistor'<br>
+    q9: 'Current increases infinitely'<br>
+    q10: 'Precision resistor'<br>
+
+  </ul>
+</details>
+
+</body>
+</html>
+
+    </form>
+</body>
+</html>
+     <br><hr>
+     <h3 >A collection of other sources</h3>
+     <a href="https://kahraba4u.com/%D9%85%D8%A7%D9%87%D9%8A-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-%D8%9F/" > <h4>Kahraba4u</h4> </a>
+    <a href=" https://ar.wikipedia.org/wiki/%D9%85%D9%82%D8%A7%D9%88%D9%85_%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A" > <h4>Wikipedia</h4> </a>
+   <a href="https://www.physicsclassroom.com/class/circuits/lesson-3/resistance" > <h4>Physicsclassroom</h4></a>
+   <h3 >Outlets selling this component</h3>
+   <table style="margin: auto; width: 250px;">
+    <tr>
+        <td>
+            <a href="  https://www.amazon.eg/%D9%85%D9%82%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%88%D9%85-%D8%B1%D8%A8%D8%B9-50%D9%82%D8%B7%D8%B9%D8%8C-%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D9%86%D9%88/dp/B091JZHY78/ref=sr_1_4?crid=18RHXTVOZ6MO4&dib=eyJ2IjoiMSJ9.CjhvxXCJsatk7QPS09XwVgE9un2qrny8keqIpuja_Ry9dHZyKSwNQgcDec7-OC4fGWUE-idKeyay2jNMm2oDjChVNF0rQ09_-IQXPT1QLg3umLJ2LhuIcOModvVSujrEW9AYGH8c6EIJC8f2HxfcjCDhGo-h6IYpao9a42mJ0oVjQ3qKWU-IyfR22o3pNV5JQJjQ6yTXVh7cTCJDZNdQTuU1ErSsfZFnMk5RiVugd1IfFmXEQhxlzK8D8DirLEY5L_tQ1GS27um_XYjis4z0kJsvgN-hb4pIQX8k50ANuK4.Vd8zyJVs_pu2i7XlGp2hk9DrahHa_w8A5lWZKIWWHek&dib_tag=se&keywords=relay+resistor&qid=1745181419&sprefix=relaysresistor%2Caps%2C212&sr=8-4 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQXj_ysdjpNvRznJdDOk9uiH90jvkgPF-yg&s"  width="150px" height="150px"> Amazon</h4> </a>
+        </td>
+        <td>
+            <a href=" https://www.noon.com/egypt-ar/450-carbon-resistors-5-tolerance-1-4w/Z94E460E217607F29BCE5Z/p/?o=z94e460e217607f29bce5z-1&shareId=702f3e48-2232-4d78-bc8f-e39ab35bb900 " > <img src="https://motanahy.com/wp-content/uploads/2022/01/%D9%86%D9%88%D9%86.jpeg" width="150px " height="150px"> Noon </a>
+        </td>
+        <td>
+            <a href=" https://www.ram-e-shop.com/ar/website/search?search=Resistor&order=name+asc " > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIn5MUXcOCMQHkQ41Cxsbr46v64ZLnGxKqMA&s" width="150px " height="150px"> Ram Electronics </a>
+        </td>
+    </tr>
+   </table>
+  </section>
+</body>
+<script>
+  
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>

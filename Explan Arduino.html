@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arduino</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <h1><i><ins>Arduino</ins></i></h1>
+    </div>
+<section>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/250px-Arduino_Uno_-_R3.jpg " width="350px" height="350px"><br>
+Arduino is an open-source electronics platform based on easy-to-use hardware and software. <br>
+It’s designed for anyone making interactive projects — from hobbyists and students to engineers and professionals.<br><br><hr>
+<h3> Arduino Hardware</h3>
+Arduino boards are microcontroller-based development boards. <br>
+They are equipped with all the necessary components to connect sensors, actuators, and other components to control or interact with the environment.<br><br><hr>
+<h3>Key Components of an Arduino Board</h3>
+<b>Microcontroller:</b><br>
+ The brain of the board (e.g., ATmega328P on Arduino Uno).<br><br>
+<b>Digital I/O Pins:</b><br>
+ Used for input or output of digital signals.<br><br>
+<b>Analog Input Pins:</b><br>
+ Read analog signals from sensors (like temperature or light sensors).<br><br>
+<b>Power Jack:</b><br>
+ To supply power to the board.<br><br>
+<b>USB Port:</b><br>
+ Used for programming the board and powering it.<br><br>
+<b>Reset Button:</b><br>
+ Restarts the program running on the board.<br><br>
+<b>Voltage Regulator:</b><br>
+ Manages the voltage supplied to the board.<br><br><hr>
+ <h3> A collection of other important Videos</h3>
+ <a href="https://www.youtube.com/watch?v=1IEqJjPIm8w&list=PLa4kqtM7SuFwpY8omRT32RK8kw1hDIGJ3 "> First Video</a>
+ <a href=" https://www.youtube.com/watch?v=1IEqJjPIm8w&list=PLa4kqtM7SuFwpY8omRT32RK8kw1hDIGJ3"> Second Video</a>
+ <a href=" https://www.youtube.com/watch?v=yHoRxeWSgPY&list=PLmotdda810ImH-Nldpl5QOTkHywj3dKE_"> Third Video</a>
+ <a href=" https://www.youtube.com/watch?v=KMGuOheGfBM&pp=ygUOQXJkdWlubyDYtNix2K0%3D"> Forth Video</a>
+ <br><hr>
+<h3> Popular Arduino Boards</h3>
+<b>* </b>Arduino Uno (most common, beginner-friendly)<br><br>
+<b>* </b>Arduino Mega (more memory and pins)<br><br>
+<b>* </b>Arduino Nano (compact and small)<br><br>
+<b>* </b>Arduino Leonardo (can act like a keyboard/mouse)<br><br>
+<b>* </b>Arduino Due (more powerful, ARM processor)<br><br><hr>
+<h3>3. Arduino Software (IDE)</h3>
+The Arduino IDE (Integrated Development Environment) is the software used to write code and upload it to the Arduino board.<br><br>
+The programming language is based on C/C++.<br>
+Common functions include:<br><br>
+<b>* </b>setup() – runs once when the board starts.<br>
+<b>* </b>loop() – runs continuously after setup().<br>
+<h3>Example:</h3>
+void setup() {<br>
+  pinMode(13, OUTPUT); // set pin 13 as output<br>
+}<br>
+void loop() {<br>
+  digitalWrite(13, HIGH); // turn on LED<br>
+  delay(1000);            // wait 1 second<br>
+  digitalWrite(13, LOW);  // turn off LED<br>
+  delay(1000);            // wait 1 second<br>
+}<br><br><hr>
+<h3>Applications of Arduino</h3>
+<b>* </b>Home automation<br><br>
+<b>* </b>Robotics<br><br>
+<b>* </b>IoT (Internet of Things)<br><br>
+<b>* </b>Smart agriculture<br><br>
+<b>* </b>Sensor data logging<br><br>
+<b>* </b>DIY electronics projects<br><br><hr>
+<h3>Why Arduino is Popular</h3>
+<b>* </b>Open-source and affordable<br><br>
+<b>* </b>Easy for beginners<br><br>
+<b>* </b>Large community support<br><br>
+<b>* </b>Wide range of sensors and modules<br><br>
+<b>* </b>Can interface with Bluetooth, Wi-Fi, GSM, GPS, etc.<br><br>
+  <h3>Arduino Quiz</h3>
+  <form>
+
+    <p>1. What is Arduino?</p>
+    <input type="radio" name="q1">A type of programming language<br>
+    <input type="radio" name="q1">An open-source electronics platform<br>
+    <input type="radio" name="q1">A smartphone operating system<br>
+    <input type="radio" name="q1">A computer virus<br>
+
+    <p>2. What is the main function of a microcontroller in Arduino?</p>
+    <input type="radio" name="q2">Store videos<br>
+    <input type="radio" name="q2">Run operating systems<br>
+    <input type="radio" name="q2">Control input and output operations<br>
+    <input type="radio" name="q2">Access the internet<br>
+
+    <p>3. Which programming language is mainly used to program Arduino boards?</p>
+    <input type="radio" name="q3">Python<br>
+    <input type="radio" name="q3">C/C++<br>
+    <input type="radio" name="q3">Java<br>
+    <input type="radio" name="q3">Scratch<br>
+
+    <p>4. What does the function <code>pinMode()</code> do in Arduino code?</p>
+    <input type="radio" name="q4">It sends data to sensors<br>
+    <input type="radio" name="q4">It sets a pin as input or output<br>
+    <input type="radio" name="q4">It powers the Arduino<br>
+    <input type="radio" name="q4">It delays the program<br>
+
+    <p>5. What is the purpose of the <code>loop()</code> function?</p>
+    <input type="radio" name="q5">To run code once<br>
+    <input type="radio" name="q5">To handle errors<br>
+    <input type="radio" name="q5">To run code repeatedly<br>
+    <input type="radio" name="q5">To import libraries<br>
+
+    <p>6. Which Arduino board is most commonly used by beginners?</p>
+    <input type="radio" name="q6">Arduino Due<br>
+    <input type="radio" name="q6">Arduino Mega<br>
+    <input type="radio" name="q6">Arduino Uno<br>
+    <input type="radio" name="q6">Arduino Nano 33 BLE<br>
+
+    <p>7. What voltage level is used by most Arduino Uno pins?</p>
+    <input type="radio" name="q7">12V<br>
+    <input type="radio" name="q7">9V<br>
+    <input type="radio" name="q7">3.3V<br>
+    <input type="radio" name="q7">5V<br>
+
+    <p>8. What is a digital pin used for in Arduino?</p>
+    <input type="radio" name="q8">To store data<br>
+    <input type="radio" name="q8">To connect to Wi-Fi<br>
+    <input type="radio" name="q8">To read or write HIGH/LOW signals<br>
+    <input type="radio" name="q8">To power the board<br>
+
+    <p>9. What is the purpose of the <code>delay()</code> function?</p>
+    <input type="radio" name="q9">To stop the Arduino permanently<br>
+    <input type="radio" name="q9">To create a pause in milliseconds<br>
+    <input type="radio" name="q9">To increase voltage<br>
+    <input type="radio" name="q9">To upload the code<br>
+
+    <p>10. What does the USB connection do in an Arduino board?</p>
+    <input type="radio" name="q10">Charges the battery<br>
+    <input type="radio" name="q10">Provides internet<br>
+    <input type="radio" name="q10">Uploads code and provides power<br>
+    <input type="radio" name="q10">Plays audio files<br>
+  </form>
+  <h3> <summary>Answer</summary></h3>
+  <details>
+    <ul>
+        1. An open-source electronics platform<br>
+        2. Control input and output operations<br>
+        3. C/C++<br>
+        4. It sets a pin as input or output<br>
+        5. To run code repeatedly<br>
+        6. Arduino Uno<br>
+        7. 5V<br>
+        8. To read or write HIGH/LOW signals<br>
+        9. To create a pause in milliseconds<br>
+        10. Uploads code and provides power<br>
+    </ul>
+  </details>
+<h3> A collection of other important sources</h3>
+<a href=" https://en.wikipedia.org/wiki/Arduino" > <b> Wikipedia</b></a>
+<a href=" https://abadnet.com.sa/online/%D9%85%D8%A7%D9%87%D9%88-%D8%A7%D9%84%D9%80-arduino-%D9%88%D9%85%D9%85%D8%A7-%D9%8A%D8%AA%D9%83%D9%88%D9%86-%D9%88%D9%85%D8%A7-%D9%87%D9%8A-%D8%A3%D9%87%D9%85-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7/" > <b> Abadnet</b></a>
+<a href=" https://www.alrab7on.com/what-is-arduino/" > <b> Alrab7on</b></a>
+<h3 >Outlets selling this component</h3>
+<table style="margin: auto; width: 250px;">
+ <tr>
+     <td>
+         <a href="  https://www.amazon.eg/%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D9%86%D9%88-%D8%A7%D9%88%D9%86%D9%88-%D9%85%D8%B9-%D9%83%D8%A7%D8%A8%D9%84-USB/dp/B091JGK9GS/ref=sr_1_5?crid=78FU0ZC96JM9&dib=eyJ2IjoiMSJ9.WTQu9krY-naPiJA_QLnxvbeLH_kR2GLUfwYl0mS2Worlpbzi7_2-QYy4rcm_A7bGN96NHHCpqt2ktohzzAlzSrbF8k9ZxlyAtgspO_ePlBjD5uRY98x-syjIVtlGEzafTd5bRLtoofTPRC-yqEvw2GhvT_iIodCQiml91alsYIYhB0t4GtIKvaz353RPC4GQJ_GZl6Sn4oOc-FQTzw1MXn33T_oWR2y8G1mgERVOKfBvC4RowPVq_ueyV23mxm8omSqMOzF_fvIkKmGia2jhDEtAfxvN_9QGT1qWfUsd4Ag.jX8EXR69QntT5P4IRPCNHdPjA6g4Wx6NWFcC4wNRTQQ&dib_tag=se&keywords=Arduino&qid=1745179096&sprefix=arduino%2Caps%2C191&sr=8-5 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQXj_ysdjpNvRznJdDOk9uiH90jvkgPF-yg&s"  width="150px" height="150px"> Amazon</h4> </a>
+     </td>
+     <td>
+         <a href="  https://www.ram-e-shop.com/ar/shop/kit-arduino-uno-a65-arduino-uno-rev3-a65-original-chips-clone-rdwynw-wnw-mkwnt-sly-6605" > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIn5MUXcOCMQHkQ41Cxsbr46v64ZLnGxKqMA&s" width="150px " height="150px"> Ram Electronics </a>
+     </td>
+      <td>
+         <a href="https://www.electrokit.com/search.php?keyword=Arduino&search=  " > <img src="https://electrokitperu.com/wp-content/uploads/2022/03/Electrokit_2022_black2.png" width="150px " height="150px">Electro kit </a>
+     </td>
+ </tr>
+</table>
+</section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>

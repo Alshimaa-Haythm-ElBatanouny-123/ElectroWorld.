@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bi-color LED</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div>
+    <h1><ins><i>Bi-color LED</i></ins></h1>
+  </div>
+  <section>
+      <img  src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmuXQ-Oc8N79ROENOdv69go9kn529Ce89Fg&s" width="300px" height="300px"><br><br>
+      A bi-color LED is an LED that contains two different colored light-emitting diodes (LEDs) in one package.<br>
+      These two LEDs are usually arranged in such a way that they can be individually controlled to produce two different colors.<br>
+       The most common configuration involves a red LED and a green LED, but other color combinations, such as red and blue, are also used.<br><br><hr>
+      <h3>How it works</h3>
+      A bi-color LED typically has two leads (pins) or three leads:<br><br>
+      <b>1. Two-pin bi-color LED:</b><br>
+      In this configuration, the LED has two pins, one for each color.<br>
+       To change the color, you switch between the two pins to provide current to the corresponding LED.<br><br>
+      <b>2. Three-pin bi-color LED:</b><br>
+      In this setup<br> <b><i>there are three pins:</i></b><br>
+       one common cathode (or anode) pin and two separate pins for the red and green LEDs. <br>
+       The color changes depending on which LED (red or green) is activated.<br>
+        The combination of the red and green LEDs can also create an additional color (like yellow).<br>
+        <br><hr>
+        <h3>A collection of important videos for explanation</h3>
+            <a href="https://www.youtube.com/watch?v=uYMxSD0R9ZI" > <h4>First video</h4> </a>
+            <a href=" https://www.youtube.com/watch?v=UOFcXcb7soI" > <h4>Second video</h4> </a>
+          <a href="https://www.youtube.com/watch?v=5M9p25OfKdg" > <h4> Third video </h4></a>
+       <br><br><hr>
+      <h3>How to control a bi-color LED</h3>
+      To control a bi-color LED, you use a microcontroller or circuit to provide voltage to the appropriate pins.<br>
+       By turning on the red or green LED individually, you can display either color. <br>
+       In a three-pin setup, both LEDs can be turned on at the same time  <br>
+       To create a mixed color (for example, red and green together produce yellow).<br><br><hr>
+      <h3>Example circuit for a bi-color LED</h3>
+      For a simple 3-pin bi-color LED, you can use an Arduino to control it:<br><br>
+      int redPin = 9;    // Pin connected to the red LED<br>
+      int greenPin = 10; // Pin connected to the green LED<br>
+      void setup() {<br>
+        pinMode(redPin, OUTPUT);<br>
+        pinMode(greenPin, OUTPUT);<br>
+      }<br>
+      void loop() {<br>
+        // Turn on the red LED<br>
+        digitalWrite(redPin, HIGH);<br>
+        digitalWrite(greenPin, LOW);<br>
+        delay(1000); // Wait for 1 second<br>
+        // Turn on the green LED<br>
+        digitalWrite(redPin, LOW);<br>
+        digitalWrite(greenPin, HIGH);<br>
+        delay(1000); // Wait for 1 second<br><br>
+        // Turn on both LEDs (yellow)<br>
+        digitalWrite(redPin, HIGH);<br>
+        digitalWrite(greenPin, HIGH);<br>
+        delay(1000); // Wait for 1 second<br><br>
+        // Turn off both LEDs<br>
+        digitalWrite(redPin, LOW);<br>
+        digitalWrite(greenPin, LOW);<br>
+        delay(1000); // Wait for 1 second<br>
+      }<br>
+      <br>
+      In this example, the LED will alternate between red, green, yellow (when both are on), and off.
+      <br><hr>
+  <h3> Quiz</h3>
+
+  <form>
+
+    <p>1. What is the main feature of a bi-color LED?</p>
+    <input type="radio" name="q1">It can emit multiple colors simultaneously<br>
+    <input type="radio" name="q1">It can emit only one color<br>
+    <input type="radio" name="q1">It can emit two colors, but not at the same time<br>
+    <input type="radio" name="q1">It can change colors automatically<br>
+
+    <p>2. How is a bi-color LED typically controlled?</p>
+    <input type="radio" name="q2">By varying the voltage<br>
+    <input type="radio" name="q2">By controlling the current<br>
+    <input type="radio" name="q2">By switching between two different pins<br>
+    <input type="radio" name="q2">By using PWM (Pulse Width Modulation)<br>
+
+    <p>3. What colors can a bi-color LED typically display?</p>
+    <input type="radio" name="q3">Red and Green<br>
+    <input type="radio" name="q3">Blue and Yellow<br>
+    <input type="radio" name="q3">Red and Blue<br>
+    <input type="radio" name="q3">Green and White<br>
+
+    <p>4. How does a bi-color LED display two colors?</p>
+    <input type="radio" name="q4">By lighting up both colors simultaneously<br>
+    <input type="radio" name="q4">By turning on one color with forward voltage and the other with reverse voltage<br>
+    <input type="radio" name="q4">By using an internal switch<br>
+    <input type="radio" name="q4">By switching between two separate LEDs<br>
+
+    <p>5. In a typical bi-color LED, what happens when the current flows in the opposite direction?</p>
+    <input type="radio" name="q5">The LED will emit a different color<br>
+    <input type="radio" name="q5">The LED will stop emitting light<br>
+    <input type="radio" name="q5">The LED will flicker<br>
+    <input type="radio" name="q5">The LED will emit the same color<br>
+
+    <p>6. How can you control which color is emitted in a bi-color LED?</p>
+    <input type="radio" name="q6">By adjusting the brightness<br>
+    <input type="radio" name="q6">By switching the polarity of the current<br>
+    <input type="radio" name="q6">By increasing the voltage<br>
+    <input type="radio" name="q6">By using multiple resistors<br>
+
+    <p>7. What is a typical application of a bi-color LED?</p>
+    <input type="radio" name="q7">Indicating status (e.g., on/off, charging, error)<br>
+    <input type="radio" name="q7">Producing music<br>
+    <input type="radio" name="q7">Signaling data transmission speed<br>
+    <input type="radio" name="q7">Generating light patterns for displays<br>
+
+    <p>8. What type of package is often used for bi-color LEDs?</p>
+    <input type="radio" name="q8">Surface-mount (SMD)<br>
+    <input type="radio" name="q8">Through-hole<br>
+    <input type="radio" name="q8">Both SMD and Through-hole<br>
+    <input type="radio" name="q8">Wire-lead<br>
+
+    <p>9. How many pins does a typical bi-color LED have?</p>
+    <input type="radio" name="q9">One<br>
+    <input type="radio" name="q9">Two<br>
+    <input type="radio" name="q9">Three<br>
+    <input type="radio" name="q9">Four<br>
+
+    <p>10. What is the primary difference between a bi-color LED and a regular LED?</p>
+    <input type="radio" name="q10">A bi-color LED can emit more than one color<br>
+    <input type="radio" name="q10">A bi-color LED is smaller<br>
+    <input type="radio" name="q10">A bi-color LED consumes less power<br>
+    <input type="radio" name="q10">A bi-color LED is cheaper<br>
+  </form>
+  <h3> <summary>Answer</summary></h3>
+  <details>
+    <ul>
+      1. It can emit two colors, but not at the same time><br>
+      2. By switching between two different pins<br>
+      3. Red and Green<br>
+      4. By turning on one color with forward voltage and the other with reverse voltage<br>
+      5. The LED will emit a different color<br>
+      6. By switching the polarity of the current<br>
+      7. Indicating status (e.g., on/off, charging, error)<br>
+      8. Both SMD and Through-holev<br>
+      9. Two<br>
+      10. A bi-color LED can emit more than one color<br>
+  
+    </ul>
+  </details>
+      <br><br>
+      <h3 >A collection of other sources</h3>
+      <a href="https://fotoexpresseg.com/shop/godox-led500c-bi-color-led-video-light/" > <h4> Fotoexpresseg</h4> </a>
+      <a href=" https://www.kareemstores.com/ar/nanlite-fs-150b-bi-color-led-monolight-1685803951" > <h4>Kareemstores</h4> </a>
+     <a href="https://gproegypt.com/product/t2-rgb-bi-color-led-video-light/" > <h4> gproegypt</h4></a>
+     <h3 >Outlets selling this component</h3>
+     <table style="margin: auto; width: 250px;">
+      <tr>
+          <td>
+              <a href=" https://www.amazon.eg/%D8%AF%D9%8A%D9%88%D8%AF%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B6%D8%A7%D8%A1%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-%D9%88%D9%88%D9%84-%D9%81%D8%B1%D9%88%D9%86%D8%AA/dp/B083GGDGWP/ref=sr_1_1?crid=KLUQ00WDZOHB&dib=eyJ2IjoiMSJ9.KzBgr6kw1vi-yaLQ9u_1dOhbWfp3SECnwfvMkqS-FbVvR8smMRTXgjJ8w-BEmhMY05abh0Apo7JzK4oXW8qElC5Qgfj5-5gol91SoGZDGQcYaE3rFWZA4dGSyBCwcxryuwxnCe0c7F3IkGGuGp1asPTKAWVF9WsfiYpQ8uh6U78AO2--GcrZio5dUJWcPHiI80scwy0WVaKdvgKMEPa5zvFA0DLCnFNbhIhTHgIpHBayKt2eDTJnZlInb22pujea4k6fjt5U65oIiSzV9JFBNvBHPakFdM9DDHysVhyZgQE.Z4pY-KnyNmdyQW4gO88-jvkm0U8CRY-X-YoOg-IvD9o&dib_tag=se&keywords=LED+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85%D9%87+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%A6%D8%B1+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9&qid=1745136595&sprefix=led+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85%D9%87+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%A6%D8%B1+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%2Caps%2C117&sr=8-1  "><img src="data:image/jpeg;base64,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"  width="150px" height="150px"> Amazon</h4> </a>
+          </td>
+          <td>
+              <a href=" https://www.noon.com/egypt-ar/search/?q=%20LED " > <img src="data:image/jpeg;base64,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" width="150px " height="150px"> Noon </a>
+          </td>
+      </tr>
+     </table>
+  </section>
+</body>
+<script>
+ 
+  
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a");
+      links.forEach(link => {
+          link.addEventListener("click", function () {
+              console.log("تم الضغط على رابط: " + link.href);
+          });
+      });
+      const image = document.querySelector("img");
+      if (image) {
+          image.addEventListener("click", function () {
+              image.style.transform = "scale(1.2)";
+              image.style.transition = "transform 0.3s ease";
+              setTimeout(() => {
+                  image.style.transform = "scale(1)";
+              }, 600);
+          });
+      }
+      const title = document.querySelector("h1");
+      if (title) {
+          title.addEventListener("mouseenter", function () {
+              title.style.color = "yellow";
+          });
+          title.addEventListener("mouseleave", function () {
+              title.style.color = "white";
+          });
+      }
+  });
+  </script>
+</html>

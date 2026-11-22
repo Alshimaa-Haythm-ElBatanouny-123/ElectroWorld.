@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shell-type transformer</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <h1>Shell-type transformer</h1>
+    </div>
+    <section>
+            <img src="data:image/jpeg;base64,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" width="300px" height="300px"><br><br>
+            A shell-type transformer (also known as a shell-core transformer) is a type of transformer where the core surrounds the windings.<br>
+            unlike the core-type transformer where the windings are wrapped around the core.<br>
+            In a shell-type transformer, the magnetic core is designed in a way that the primary and secondary windings are placed in the central section of the core.<br>
+             which helps provide better magnetic flux containment.<br>
+             <br><hr>
+             <h3>A collection of important videos for explanation</h3>
+               <a href="https://www.youtube.com/watch?v=NbM5nCrVljg" > <h4>First video</h4> </a>
+               <a href="https://www.youtube.com/watch?v=dlC-SIv4agg " > <h4>Second video</h4> </a>
+             <a href="https://www.youtube.com/watch?v=RsY_prUxuas" > <h4>Third video </h4></a>
+            <a href="https://www.youtube.com/watch?v=1TAgdFiyJ9w"><h4>Fourth Video</h4></a>
+            <br><br><hr>
+            <h3>Here's how it works</h3>
+            <b>Core Design:</b><br>
+            The core of a shell-type transformer is made of laminated sheets of magnetic material.<br>
+             similar to the core-type transformer, but with a different arrangement.<br>
+            The core structure surrounds the windings from three sides, forming a "shell" around the windings.<br>
+            This provides better containment of the magnetic flux, improving efficiency.<br><br><hr>
+            <h3>Magnetic Flux Path</h3>
+             In a shell-type transformer, the magnetic flux travels through the core and surrounds the windings more effectively.<br>
+            The windings are placed inside the core, with a smaller area of the core exposed to the outside, which reduces energy losses.<br><br><hr>
+            <h3>Windings</h3>
+            Both the primary and secondary windings are located within the central part of the core, and the magnetic flux flows through them.<br>
+            This configuration allows for more effective energy transfer between the windings.<br><br><hr>
+            <h3>Advantages</h3>
+            Shell-type transformers tend to have better performance in terms of reducing losses like eddy<br>
+             currents and hysteresis because the magnetic path is more concentrated.<br>
+            This design also offers higher mechanical strength and greater resistance to short circuits compared to core-type transformers.<br><br><hr>
+            <h3>Applications</h3>
+            Shell-type transformers are commonly used in applications where reduced energy losses and enhanced durability are important.<br>
+            They are often found in medium to high-power transformers, industrial power supplies, and large electrical systems.<br><br><hr>
+            <h3>In summary</h3>
+            A shell-type transformer has a core that envelops the windings, which improves the magnetic flux containment and reduces losses.<br>
+            It is more robust and efficient, making it suitable for high-power applications where efficiency and mechanical strength are critical.
+            <br><hr>
+  <h3>Shell Type Transformer Quiz</h3>
+  <form>
+    <p>1. What is the primary characteristic of a Shell Type Transformer?</p>
+    <input type="radio" name="q1">The core is surrounded by the windings<br>
+    <input type="radio" name="q1">The windings are surrounded by the core<br>
+    <input type="radio" name="q1">It uses a laminated core for better insulation<br>
+    <input type="radio" name="q1">It has a smaller physical size compared to core type transformers<br>
+
+    <p>2. What is the main advantage of a Shell Type Transformer?</p>
+    <input type="radio" name="q2">Better mechanical strength and reduced core losses<br>
+    <input type="radio" name="q2">Lower cost of production<br>
+    <input type="radio" name="q2">More compact size<br>
+    <input type="radio" name="q2">Higher efficiency at low voltages<br>
+
+    <p>3. How is the magnetic flux distribution in a Shell Type Transformer?</p>
+    <input type="radio" name="q3">The flux is uniformly distributed throughout the core<br>
+    <input type="radio" name="q3">The flux is concentrated in one side of the core<br>
+    <input type="radio" name="q3">The flux is spread unevenly across the core<br>
+    <input type="radio" name="q3">The flux is distributed in the winding<br>
+
+    <p>4. In a Shell Type Transformer, how are the primary and secondary windings arranged?</p>
+    <input type="radio" name="q4">Both windings are placed concentrically with the core<br>
+    <input type="radio" name="q4">The primary winding is located on one leg of the core, and the secondary on the other<br>
+    <input type="radio" name="q4">Both windings are separated by a dielectric material<br>
+    <input type="radio" name="q4">The primary winding surrounds the secondary winding<br>
+
+    <p>5. Which of the following is NOT a common application for Shell Type Transformers?</p>
+    <input type="radio" name="q5">High voltage power transmission<br>
+    <input type="radio" name="q5">Low to medium voltage power distribution<br>
+    <input type="radio" name="q5">Transformer units used in electrical substations<br>
+    <input type="radio" name="q5">Small electronic devices<br>
+
+    <p>6. Why is the Shell Type Transformer preferred for applications requiring high mechanical strength?</p>
+    <input type="radio" name="q6">It has a higher saturation flux density<br>
+    <input type="radio" name="q6">It has a solid core construction that offers better protection against external forces<br>
+    <input type="radio" name="q6">It uses more robust insulation material<br>
+    <input type="radio" name="q6">It has a lower operating temperature<br>
+
+    <p>7. What type of core construction is used in Shell Type Transformers?</p>
+    <input type="radio" name="q7">Toroidal core<br>
+    <input type="radio" name="q7">E-I core<br>
+    <input type="radio" name="q7">Rectangular core<br>
+    <input type="radio" name="q7">Multi-phase core<br>
+
+    <p>8. What type of losses are minimized in a Shell Type Transformer?</p>
+    <input type="radio" name="q8">Core losses and eddy current losses<br>
+    <input type="radio" name="q8">Magnetic flux losses<br>
+    <input type="radio" name="q8">Insulation losses<br>
+    <input type="radio" name="q8">Mechanical friction losses<br>
+
+    <p>9. In comparison to Core Type Transformers, Shell Type Transformers typically have:</p>
+    <input type="radio" name="q9">Better short circuit resistance<br>
+    <input type="radio" name="q9">Higher efficiency but at higher costs<br>
+    <input type="radio" name="q9">Lower voltage handling capability<br>
+    <input type="radio" name="q9">Less mechanical strength<br>
+
+    <p>10. The core of a Shell Type Transformer is constructed in such a way that:</p>
+    <input type="radio" name="q10">It provides better insulation between windings<br>
+    <input type="radio" name="q10">It has fewer joints and is more compact<br>
+    <input type="radio" name="q10">It increases the core loss due to its design<br>
+    <input type="radio" name="q10">It uses more winding material than a Core Type Transformer<br>
+  </form>
+  <h3> <summary>Answer</summary></h3>
+  <details>
+    <ul>
+        1. The core is surrounded by the windings<br>
+        2. Better mechanical strength and reduced core losses<br>
+        3. The flux is uniformly distributed throughout the core<br>
+        4. Both windings are placed concentrically with the core<br>
+        5. Small electronic devices<br>
+        6. It has a solid core construction that offers better protection against external forces<br>
+        7. E-I core<br>
+        8. Core losses and eddy current losses<br>
+        9. Better short circuit resistance<br>
+        10. It provides better insulation between windings<br>
+    </ul>
+  </details>
+            <h3 >A collection of other sources</h3>
+            <a href="https://www.electrical4u.com/shell-type-transformer/" > <h4>Electrical4u</h4> </a>
+           <a href=" https://ttesusa.com/blog/shell-type-transformer-learn-more-about-what-it-is-benefits-etc/" > <h4>Ttesusa</h4> </a>
+          <a href="https://www.hitachienergy.com/products-and-solutions/transformers/power-transformers/generator-step-up-transformers-gsu/shell-type-transformers" > <h4>Hitachienergy</h4></a>
+          <h3 >Outlets selling this component</h3>
+          <table style="margin: auto; width: 250px;">
+           <tr>
+               <td>
+                   <a href=" https://www.amazon.eg/s?k=Shell-type+transformer&crid=3UMMNR20AVUS8&sprefix=shell-type+transformer%2Caps%2C164&ref=nb_sb_noss  "><img src="data:image/jpeg;base64,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"  width="150px" height="150px"> Amazon</h4> </a>
+               </td>
+           </tr>
+          </table>
+    </section>
+</body>
+<script>
+  
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                console.log("تم الضغط على رابط: " + link.href);
+            });
+        });
+        const image = document.querySelector("img");
+        if (image) {
+            image.addEventListener("click", function () {
+                image.style.transform = "scale(1.2)";
+                image.style.transition = "transform 0.3s ease";
+                setTimeout(() => {
+                    image.style.transform = "scale(1)";
+                }, 600);
+            });
+        }
+        const title = document.querySelector("h1");
+        if (title) {
+            title.addEventListener("mouseenter", function () {
+                title.style.color = "yellow";
+            });
+            title.addEventListener("mouseleave", function () {
+                title.style.color = "white";
+            });
+        }
+    });
+    </script>
+</html>

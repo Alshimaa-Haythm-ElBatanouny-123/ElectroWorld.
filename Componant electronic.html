@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+
+<html>
+    <header>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg-dark: #0b1120;
+        --bg-gradient: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+        --card-bg: rgba(30, 41, 59, 0.65);
+        --card-border: rgba(148, 163, 184, 0.15);
+        --accent-green: #a2d134;
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* الخلفية العامة */
+    body {
+        background: var(--bg-dark);
+        background-image: var(--bg-gradient);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-main);
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+        line-height: 1.7;
+    }
+
+    /* تنسيق الصور العامة */
+    img {
+        border-radius: 14px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    /* تنسيق الشريط العلوي والعنوان */
+    #name {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 20px 5%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h1 {
+        color: var(--accent-green);
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+        text-shadow: 0 0 15px rgba(162, 209, 52, 0.3);
+    }
+
+    /* صندوق المعلومات والشرح */
+    #information {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid var(--card-border);
+        padding: 30px;
+        border-radius: 16px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 25px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    #information mark {
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent-cyan);
+        padding: 2px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* تنسيق الجداول والبطاقات بداخلها */
+    table {
+        width: 90%;
+        max-width: 1280px;
+        margin: 35px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        border: none;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+    }
+
+    td figure {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 18px;
+        margin: 0;
+        border-radius: 16px;
+        transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    td figure:hover {
+        transform: translateY(-8px);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    /* صور العناصر داخل الجداول */
+    td img {
+        border-radius: 12px;
+        background: #ffffff;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        box-shadow: none;
+    }
+
+    td figure:hover img {
+        transform: scale(1.06);
+    }
+
+    /* تصميم الروابط */
+    a {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: var(--accent-gold);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--accent-cyan);
+    }
+
+    /* التجاوب مع شاشات الموبايل */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        #information {
+            width: 92%;
+            padding: 20px;
+        }
+        table, tbody, tr, td {
+            display: block;
+            width: 100%;
+        }
+        td {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+        </header>
+      <body>
+   <div>
+    <h1>Componant_electronic</h1>
+   </div>
+        <section>
+            <img src="https://www.fcpcba.com/wp-content/uploads/2024/12/circuit-components.png"width="850px" height="400px" >   
+            <table border="4">
+                <thead>
+                    <tr>
+                        <td><figure>
+                            <a href="Resistor.html" title="Go to Resistor"><div><img src="https://www.codrey.com/wp-content/uploads/2017/11/resistor-basics.png" width="200px" height="200px"><br> Resistor</div></a>
+                          </figure></td>
+                        <td><figure>
+                            <a href="Capacitor.html" title="Go to Capacitor"><div><img src="https://files.easy-orders.net/1709256725832527154.webp" width="200px" height="200px"><br> Capacitor</div></a>
+                            </figure></td>
+                        <td><figure>
+                            <a href="Diode.html"title="Go to Diode"> <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_38m4mqSC0E-MFQiF4znzRckJgMp6Pm_mUrUbin9BQ&s=10" width="200px" height="200px"><br> Diode</div></a>
+                        </figure></td>
+                        <td><figure>
+                            <a href="Voltage_Regulator .html"title="Go to Voltage_Regulator"> <div> <img src="https://files.easy-orders.net/1705624456355855960.webp" width="200px" height="200px"><br> Voltage_Regulator</div></a>
+                           </figure></td>
+                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><figure>
+                            <a href="Fuse.html" title="Go to Fuse"><div><img src="https://m.media-amazon.com/images/I/416XRcbBNlL.jpg" width="200px" height="200px"><br> Fuse</div></a>
+                           </figure></td>
+                        <td><figure>
+                            <a href="Coil.html" title="Go to Coil"><div><img src="data:image/jpeg;base64,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" width="200px" height="200px"><br> Coil</div></a>
+                        </figure></td>
+                        <td><figure>
+                            <a href="Transistor.html"title="Go to Transistor"> <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShep34l8c-kVLhAlLLUmObtOOnJAe0rdguLpRfIQG9yA&s=10" width="200px" height="200px"><br> Transistor</div></a>
+                        </figure></td>
+                            <td><figure>
+                            <a href="zener.html"title="Go to zener"> <div><img src="https://m.media-amazon.com/images/I/41-euK1ZjtL._AC_UF1000,1000_QL80_.jpg" width="200px" height="200px"><br> zener</div></a>
+                           </figure></td>
+                    </tr>
+                    <!-- <tr>
+                           <td> <figure>
+                            <a href="Mosfet.html" title="Go to MOSFET"> <div> <img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.625,f_auto,h_214,q_auto,w_380/c_pad,h_214,w_380/R7832996-01?pgw=1" width="200px" height="200px"><br> MOSFET</div></a>
+                        </figure></td>
+                    </tr> -->
+                </tbody>
+            </table> 
+        </section>
+      </body>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        // تلوين الخلفية عند المرور على الصور
+        const figures = document.querySelectorAll("td figure");
+        figures.forEach(figure => {
+            figure.addEventListener("mouseenter", () => {
+                figure.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+            });
+            figure.addEventListener("mouseleave", () => {
+                figure.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+            });
+        });
+    
+        // رسالة ترحيب بسيطة عند فتح الصفحة
+        console.log("Welcome to the Capacitor Page!");
+    });
+    </script>
+</html>

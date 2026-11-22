@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tri-color LED</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div>
+    <h1><i><ins>A tri-color LED</ins></i></h1>
+  </div>
+  <section>
+      <img src="https://www.smartbrightleds.com/images/RGB-LEDS-RL5-RGB15-C.jpg" width="300px" height="300px"><br><br>
+      A tri-color LED is an LED that contains three different colored light-emitting diodes (LEDs) in one package.<br>
+      These three LEDs typically represent the primary colors of light: red, green, and blue (RGB).<br>
+      When combined in various intensities<br>
+      these LEDs can produce a wide range of colors<br>
+       making tri-color LEDs highly versatile for applications like displays, indicators, and mood lighting.<br><br><hr>
+       <h3>How it works</h3>
+      Each color (red, green, and blue) in a tri-color LED is controlled independently.<br>
+       By adjusting the brightness of each of the three LEDs<br>
+        you can mix different levels of red, green, and blue light to create virtually any color in the visible spectrum.<br>
+         This is the basic principle behind RGB color mixing.<br><br>
+      There are two common types of tri-color LEDs:<br>
+      <b>1. Common Anode Tri-color LED:</b><br>
+      All the cathodes (negative terminals) of the three LEDs are tied together <br>
+      To a common pin, and each anode (positive terminal) is connected to a different pin.<br>
+       When a voltage is applied to the anodes, it turns on the corresponding LED.<br><br>
+      <b>2. Common Cathode Tri-color LED:</b><br>
+      All the anodes (positive terminals) are tied together <br>
+      To a common pin, and each cathode (negative terminal) is connected to a different pin.<br>
+       When the cathodes are grounded, the corresponding LED turns on.<br>
+       <br><hr>
+       <h3>A collection of important videos for explanation</h3>س
+       <a href="https://www.youtube.com/watch?v=wqzfbImsrPE"><h4> First Video</h4></a>
+           <a href=" https://www.youtube.com/watch?v=cOKtfPjgQEE" > <h4>Second video</h4> </a>
+         <a href="https://www.youtube.com/watch?v=5M9p25OfKdg" > <h4> Third video </h4></a>
+         <a href="https://www.youtube.com/watch?v=JhcZ_UrhnlQ" > <h4>Fourth video</h4> </a>
+      <br><br><hr>
+      <h3>Color Mixing</h3>
+      By adjusting the current passing through each of the red, green, and blue LEDs, you can mix the colors.<br>
+      <b> For example:</b><br>
+      Red + Green = Yellow<br>
+      Red + Blue = Magenta<br>
+      Green + Blue = Cyan<br>
+      Red + Green + Blue = White (when all are at full brightness)<br><br><hr>
+      <h3>Example Circuit for Controlling a Tri-Color LED</h3>
+      Let's say you have a common cathode tri-color LED, and you want to control it with an Arduino.<br>
+       You would use PWM (Pulse Width Modulation) to adjust the brightness of each color.<br><br>
+      int redPin = 9;    // Pin connected to the red LED<br>
+      int greenPin = 10; // Pin connected to the green LED<br>
+      int bluePin = 11;  // Pin connected to the blue LED<br><br>
+      void setup() {<br>
+        pinMode(redPin, OUTPUT);<br>
+        pinMode(greenPin, OUTPUT);<br>
+        pinMode(bluePin, OUTPUT);<br>
+      }<br><br>
+      void loop() {<br>
+        // Set color to red<br>
+        analogWrite(redPin, 255);   // Full brightness (255)<br>
+        analogWrite(greenPin, 0);   // No green<br>
+        analogWrite(bluePin, 0);    // No blue<br>
+        delay(1000); // Wait for 1 second<br><br>
+        // Set color to green<br>
+        analogWrite(redPin, 0);    // No red<br>
+        analogWrite(greenPin, 255); // Full green<br>
+        analogWrite(bluePin, 0);   // No blue<br>
+        delay(1000); // Wait for 1 second<br><br>
+        // Set color to blue<br>
+        analogWrite(redPin, 0);    // No red<br>
+        analogWrite(greenPin, 0);  // No green<br>
+        analogWrite(bluePin, 255); // Full blue<br>
+        delay(1000); // Wait for 1 second<br><br>
+        // Set color to yellow (Red + Green)<br>
+        analogWrite(redPin, 255);   // Full red<br>
+        analogWrite(greenPin, 255); // Full green<br>
+        analogWrite(bluePin, 0);    // No blue<br>
+        delay(1000); // Wait for 1 second<br><br>
+        // Set color to white (Red + Green + Blue)<br>
+        analogWrite(redPin, 255);   // Full red<br>
+        analogWrite(greenPin, 255); // Full green<br>
+        analogWrite(bluePin, 255);  // Full blue<br>
+        delay(1000); // Wait for 1 second<br>
+      }<br><br><hr>
+      <h3>Applications of Tri-color LEDs</h3>
+      <b>Displays:</b><br>
+       Often used in LED displays where different colors are needed to display information.<br><br>
+      <b>Lighting:</b><br>
+       Used in mood lighting and decorative lighting, allowing users to change colors as needed.<br><br>
+      <b>Indicators:</b><br>
+       Tri-color LEDs are useful in devices where different colors signify different states<br>
+        (e.g., green for normal, red for warning, blue for an alert).<br><br>
+      The ability to mix red, green, and blue light makes tri-color LEDs ideal for creating dynamic lighting effects.
+      <br><hr>
+  <h3>Tri-color LED Quiz</h3>
+  <form>
+    <p>1. What does a tri-color LED typically consist of?</p>
+    <input type="radio" name="q1">Three separate LED chips<br>
+    <input type="radio" name="q1">One LED chip with three pins<br>
+    <input type="radio" name="q1">Three resistors<br>
+    <input type="radio" name="q1">A single color LED<br>
+
+    <p>2. Which colors can a common tri-color LED display?</p>
+    <input type="radio" name="q2">Red, Green, Blue<br>
+    <input type="radio" name="q2">Red, Green, Yellow<br>
+    <input type="radio" name="q2">Red, Blue, White<br>
+    <input type="radio" name="q2">Red, Orange, Blue<br>
+
+    <p>3. How many pins does a typical tri-color LED have?</p>
+    <input type="radio" name="q3">2<br>
+    <input type="radio" name="q3">3<br>
+    <input type="radio" name="q3">4<br>
+    <input type="radio" name="q3">5<br>
+
+    <p>4. What is a common cathode tri-color LED?</p>
+    <input type="radio" name="q4">All LEDs share a common positive terminal<br>
+    <input type="radio" name="q4">Each LED has separate anode and cathode<br>
+    <input type="radio" name="q4">All LEDs share a common negative terminal<br>
+    <input type="radio" name="q4">It can only emit one color<br>
+
+    <p>5. What happens when red and green are turned on at the same time in a tri-color LED?</p>
+    <input type="radio" name="q5">The LED emits white light<br>
+    <input type="radio" name="q5">The LED emits yellow or orange light<br>
+    <input type="radio" name="q5">Only red will be seen<br>
+    <input type="radio" name="q5">It will not light up<br>
+
+    <p>6. What is the purpose of a resistor when connecting a tri-color LED?</p>
+    <input type="radio" name="q6">To increase brightness<br>
+    <input type="radio" name="q6">To change colors<br>
+    <input type="radio" name="q6">To protect the LED from excessive current<br>
+    <input type="radio" name="q6">To reduce resistance of the LED<br>
+
+    <p>7. Which microcontroller pin mode should be used to control an LED?</p>
+    <input type="radio" name="q7">Input<br>
+    <input type="radio" name="q7">Output<br>
+    <input type="radio" name="q7">Analog<br>
+    <input type="radio" name="q7">PWM only<br>
+
+    <p>8. Which of the following can create different color combinations in a tri-color LED?</p>
+    <input type="radio" name="q8">Changing the LED type<br>
+    <input type="radio" name="q8">Using resistors in parallel<br>
+    <input type="radio" name="q8">Turning on different LEDs together<br>
+    <input type="radio" name="q8">Using a switch<br>
+
+    <p>9. What is the main difference between a bi-color and tri-color LED?</p>
+    <input type="radio" name="q9">Tri-color LEDs are smaller<br>
+    <input type="radio" name="q9">Tri-color LEDs have only two colors<br>
+    <input type="radio" name="q9">Tri-color LEDs can emit three different colors<br>
+    <input type="radio" name="q9">Tri-color LEDs require AC voltage<br>
+
+    <p>10. What does PWM allow you to do with a tri-color LED?</p>
+    <input type="radio" name="q10">Turn it off<br>
+    <input type="radio" name="q10">Control brightness and create color mixing<br>
+    <input type="radio" name="q10">Change voltage level<br>
+    <input type="radio" name="q10">Protect the LED<br>
+  </form>
+  <h3> <summary>Answer</summary></h3>
+  <details>
+    <ul>
+      1. Three separate LED chips<br>
+      2. Red, Green, Blue<br>
+      3. 4<br>
+      4. All LEDs share a common negative terminal<br>
+      5. The LED emits yellow or orange light<br>
+      6. To protect the LED from excessive current<br>
+      7. Output<br>
+      8. Turning on different LEDs together<br>
+      9. Tri-color LEDs can emit three different colors<br>
+      10. Control brightness and create color mixing<br>
+    </ul>
+  </details>
+      <h3 >A collection of other sources</h3>
+      <a href="https://blogs.wizklub.com/question-answers/what-is-tri-color-led/" > <h4> Wizklub</h4> </a>
+      <a href="https://forum.arduino.cc/t/tri-color-leds-what-are-they/2916 " > <h4>Forum.arduino</h4> </a>
+     <a href="https://blogs.wizklub.com/question-answers/explain-working-mechanism-of-tri-color-led/" > <h4> Blogs.wizklub</h4></a>
+     <h3 >Outlets selling this component</h3>
+     <table style="margin: auto; width: 250px;">
+      <tr>
+          <td>
+              <a href=" https://www.amazon.eg/s?k=led+rgb&crid=2FVIEEXOLOVHA&sprefix=Led+%2Caps%2C120&ref=nb_sb_ss_ts-doa-p_10_4  "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQXj_ysdjpNvRznJdDOk9uiH90jvkgPF-yg&s"  width="150px" height="150px"> Amazon</h4> </a>
+          </td>
+          <td>
+              <a href=" https://www.electrokit.com/search.php?keyword=led+rgb&search= " > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNEvaS7C_AyNh6oGItADp4VyNQXcO6bXNpw&s" width="150px " height="150px"> Electro kit </a>
+          </td>
+          <td>
+            <a href="https://www.ram-e-shop.com/ar/website/search?search=led+rgb&order=name+asc" > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIn5MUXcOCMQHkQ41Cxsbr46v64ZLnGxKqMA&s" width="150px " height="150px"> Ram Electronic</a>
+        </td>
+      </tr>
+     </table>
+  </section>
+</body>
+<script>
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a");
+      links.forEach(link => {
+          link.addEventListener("click", function () {
+              console.log("تم الضغط على رابط: " + link.href);
+          });
+      });
+      const image = document.querySelector("img");
+      if (image) {
+          image.addEventListener("click", function () {
+              image.style.transform = "scale(1.2)";
+              image.style.transition = "transform 0.3s ease";
+              setTimeout(() => {
+                  image.style.transform = "scale(1)";
+              }, 600);
+          });
+      }
+      const title = document.querySelector("h1");
+      if (title) {
+          title.addEventListener("mouseenter", function () {
+              title.style.color = "yellow";
+          });
+          title.addEventListener("mouseleave", function () {
+              title.style.color = "white";
+          });
+      }
+  });
+  </script>
+</html>

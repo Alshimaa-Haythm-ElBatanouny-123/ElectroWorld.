@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+        --bg-dark: #0b1120;
+        --bg-gradient: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+        --card-bg: rgba(30, 41, 59, 0.65);
+        --card-border: rgba(148, 163, 184, 0.15);
+        --accent-green: #a2d134;
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* الخلفية العامة */
+    body {
+        background: var(--bg-dark);
+        background-image: var(--bg-gradient);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-main);
+        text-align: center;
+        margin: 0;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+        line-height: 1.7;
+    }
+
+    /* تنسيق الصور العامة */
+    img {
+        border-radius: 14px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    /* تنسيق الشريط العلوي والعنوان */
+    #name {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 20px 5%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h1 {
+        color: var(--accent-green);
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+        text-shadow: 0 0 15px rgba(162, 209, 52, 0.3);
+    }
+
+    /* صندوق المعلومات والشرح */
+    #information {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid var(--card-border);
+        padding: 30px;
+        border-radius: 16px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 25px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    #information mark {
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent-cyan);
+        padding: 2px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent-cyan);
+    }
+
+    /* تنسيق الجداول والبطاقات بداخلها */
+    table {
+        width: 90%;
+        max-width: 1280px;
+        margin: 35px auto;
+        border-collapse: separate;
+        border-spacing: 20px;
+        border: none;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+    }
+
+    td figure {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 18px;
+        margin: 0;
+        border-radius: 16px;
+        transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    td figure:hover {
+        transform: translateY(-8px);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    /* صور العناصر داخل الجداول */
+    td img {
+        border-radius: 12px;
+        background: #ffffff;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        box-shadow: none;
+    }
+
+    td figure:hover img {
+        transform: scale(1.06);
+    }
+
+    /* تصميم الروابط */
+    a {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: var(--accent-gold);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--accent-cyan);
+    }
+
+    /* التجاوب مع شاشات الموبايل */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+        #information {
+            width: 92%;
+            padding: 20px;
+        }
+        table, tbody, tr, td {
+            display: block;
+            width: 100%;
+        }
+        td {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+<h1><i><ins>Display</ins></i></h1><br>
+<body>
+
+    <section>
+        <br>
+        <img src="https://www.elexp.com/cdn/shop/products/08LCDTWI-1.jpg?v=1681145788" width="400px" height="250px">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrSW-8zJwT8MPCDPpeQbtgccjWD5Fb4a_Qw&s" width="350px" height="250px"> <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZi3uffIb9DnwGyrGlVsqaXzLzMHn1lxsfJA&s" width="400px" height="250px">    <img src="https://m.media-amazon.com/images/I/61T4p5e94GS.jpg" width="350px" height="250px"> 
+            <table border="4">
+                <tbody>
+                    <tr> 
+                  
+                        <td><figure>
+                            <a href=" The 16×2 Serial LCD.html" title="Go To The 16×2 Serial LCD">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_6d5WIwPp0INa3VBkx_VYmzYI8NzqULLx4USUIC2_dLafHDh8c3yqMXD7QVxyla7rOIk&usqp=CAU" width="150px" height="150px"><br> <b> The 16×2 Serial LCD</b></a>
+                        </figure></td>
+                        <td><figure>
+                            <a href="The Bar Graph Display.html" title="Go To The Bar Graph Display"> <img src="https://m.media-amazon.com/images/I/61pnt5CnsHL._SL1500_.jpg" width="150px" height="150px"><br><b>The Bar Graph Display </b></a>
+                        </figure></td>
+                        <td><figure>
+                            <a href=" The 7-segment display.html" title="Go To The 7-segment display"> <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Seven_segment_01_Pengo.jpg" width="150px" height="150px"><br><b>The 7-segment display </b></a>
+                        </figure></td>
+                    </tr>
+                    <!-- <tr> 
+                        <td><figure>
+                            <a href=" The 5×7 Matrix Display.html" title="Go To The 5×7 Matrix Display">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrSW-8zJwT8MPCDPpeQbtgccjWD5Fb4a_Qw&s" width="150px" height="150px"><br><b> The 5×7 Matrix Display</b></a>
+                        </figure></td>
+                   
+                        <td><figure>
+                            <a href=" The Dual 7-Segment Display.html" title="Go To The Dual 7-Segment Display">     <img src="https://5.imimg.com/data5/ECOM/Default/2023/9/341385853/MH/VZ/QR/8716310/be013192-500x500.jpg" width="150px" height="150px"><br> <b>The Dual 7-Segment Display </b></a>
+                        </figure></td>
+                        <td><figure>
+                            <a href="The 16-segment display.html " title="Go To The 16-segment display">     <img src="https://sc04.alicdn.com/kf/H4301cde3d5fe4cb9ab3d25278028963de.jpg" width="150px" height="150px"><br> <b> The 16-segment display</b></a>
+                        </figure></td>
+                    </tr> -->
+                </tbody>
+            </table>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // تلوين الخلفية عند المرور على الصور
+    const figures = document.querySelectorAll("td figure");
+    figures.forEach(figure => {
+        figure.addEventListener("mouseenter", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        });
+        figure.addEventListener("mouseleave", () => {
+            figure.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+        });
+    });
+
+    // رسالة ترحيب بسيطة عند فتح الصفحة
+    console.log("Welcome to the Capacitor Page!");
+});
+</script>
+</html>
